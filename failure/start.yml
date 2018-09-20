@@ -1,0 +1,9 @@
+---
+- hosts: gluster
+  vars:
+    ansible_user: root
+ 
+  tasks:
+    - name: Start glusterd
+      command: systemctl start glusterd
+

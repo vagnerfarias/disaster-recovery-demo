@@ -1,0 +1,95 @@
+---
+dr_sites_primary_url: https://192.168.200.100/ovirt-engine/api
+dr_sites_primary_username: admin@internal
+dr_sites_primary_ca_file: prod-ca.pem
+
+# Please fill in the following properties for the secondary site: 
+dr_sites_secondary_url: https://192.168.201.100/ovirt-engine/api
+dr_sites_secondary_username: admin@internal
+dr_sites_secondary_ca_file: dr-ca.pem
+
+dr_import_storages:
+- dr_domain_type: glusterfs
+  dr_wipe_after_delete: False
+  dr_backup: False
+  dr_critical_space_action_blocker: 5
+  dr_storage_domain_type: data
+  dr_warning_low_space: 10
+  dr_primary_name: glusterSD1
+  dr_primary_master_domain: True
+  dr_primary_dc_name: DC01
+  dr_primary_path: /rhv-sd1
+  dr_primary_address: gluster01.example.com
+  # Fill in the empty properties related to the secondary site
+  dr_secondary_name: glusterSD1
+  dr_secondary_master_domain: True
+  dr_secondary_dc_name: DC02
+  dr_secondary_path: /rhv-sd1-dr
+  dr_secondary_address:  dr-gluster01.example.com
+
+# Mapping for cluster
+dr_cluster_mappings:
+- primary_name: Production
+  # Fill the correlated cluster name in the secondary site for cluster 'Production'
+  secondary_name: DR-Production
+
+
+# Mapping for affinity group
+dr_affinity_group_mappings:
+#- primary_name: wp-samehost
+#  # Fill the correlated affinity group name in the secondary site for affinity 'wp-samehost'
+#  secondary_name: # wp-samehost
+
+
+# Mapping for affinity label
+#dr_affinity_label_mappings:
+#- primary_name: Windows
+#  # Fill the correlated affinity label name in the secondary site for affinity label 'Windows'
+#  secondary_name: # Windows
+
+
+# Mapping for domain
+dr_domain_mappings: 
+- primary_name: internal-authz
+  # Fill in the correlated domain in the secondary site for domain 'internal-authz'
+  secondary_name: internal-authz
+
+
+# Mapping for role
+# Fill in any roles which should be mapped between sites.
+dr_role_mappings: 
+- primary_name: 
+  secondary_name: 
+
+dr_network_mappings:
+- primary_network_name: vm public net
+# Data Center name is relevant when multiple vnic profiles are maintained.
+# please uncomment it in case you have more than one DC.
+  primary_network_dc: DC01
+  primary_profile_name: vm public net
+  primary_profile_id: 8d0bbee1-8424-4cb9-906f-677b24c377ad
+  # Fill in the correlated vnic profile properties in the secondary site for profile 'vm public net'
+  secondary_network_name: vm public net
+# Data Center name is relevant when multiple vnic profiles are maintained.
+# please uncomment it in case you have more than one DC.
+  secondary_network_dc: DC02
+  secondary_profile_name: vm public net
+  secondary_profile_id: 8e7467d5-5605-45da-9db5-e4477ce4ffaa
+
+- primary_network_name: vm public net
+# Data Center name is relevant when multiple vnic profiles are maintained.
+# please uncomment it in case you have more than one DC.
+  primary_network_dc: DC01
+  primary_profile_name: limited_bw
+  primary_profile_id: 4e680718-f0e8-45ef-ac30-349cb73bc6b1
+  # Fill in the correlated vnic profile properties in the secondary site for profile 'limited_bw'
+  secondary_network_name: vm public net
+# Data Center name is relevant when multiple vnic profiles are maintained.
+# please uncomment it in case you have more than one DC.
+  secondary_network_dc: DC02
+  secondary_profile_name: limited_bw
+  secondary_profile_id: c3847764-8a2e-416f-93bf-f0d1f7108da9
+
+
+# Mapping for external LUN disks
+dr_lun_mappings:

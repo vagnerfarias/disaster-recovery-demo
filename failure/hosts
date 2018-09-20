@@ -1,0 +1,7 @@
+[rhv]
+rhvm.example.com
+
+[gluster]
+gluster01.example.com
+gluster02.example.com
+gluster03.example.com

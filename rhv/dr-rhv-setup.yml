@@ -1,0 +1,14 @@
+---
+- name: Generate mapping
+  hosts: localhost
+  connection: local
+
+  vars:
+    site: https://192.168.200.100/ovirt-engine/api
+    username: admin@internal
+    password: r3dh4t1!
+    ca: prod-ca.pem
+    var_file: disaster_recovery_vars.yml
+
+  roles:
+    - oVirt.disaster-recovery

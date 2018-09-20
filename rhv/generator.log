@@ -1,0 +1,1914 @@
+DEBUG:root:* Closing connection 0
+DEBUG:root:* About to connect() to 192.168.200.100 port 443 (#0)
+DEBUG:root:* Trying 192.168.200.100...
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#0)
+DEBUG:root:* Initializing NSS with certpath: sql:/etc/pki/nssdb
+DEBUG:root:* CAfile: prod-ca.pem
+DEBUG:root:*   CApath: none
+DEBUG:root:* Server certificate:
+DEBUG:root:* subject: CN=rhvm.example.com,O=example.com,C=US
+DEBUG:root:* start date: Jul 09 20:04:25 2018 GMT
+DEBUG:root:* expire date: Jun 14 20:04:25 2023 GMT
+DEBUG:root:* common name: rhvm.example.com
+DEBUG:root:* issuer: CN=rhvm.example.com.48737,O=example.com,C=US
+DEBUG:root:* NSS error -12276 (SSL_ERROR_BAD_CERT_DOMAIN)
+DEBUG:root:* Unable to communicate securely with peer: requested domain name does not match the server's certificate.
+DEBUG:root:* Closing connection 0
+DEBUG:root:* About to connect() to 192.168.200.100 port 443 (#0)
+DEBUG:root:* Trying 192.168.200.100...
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#0)
+DEBUG:root:* Initializing NSS with certpath: sql:/etc/pki/nssdb
+DEBUG:root:* CAfile: prod-ca.pem
+DEBUG:root:*   CApath: none
+DEBUG:root:* Server certificate:
+DEBUG:root:* subject: CN=rhvm.example.com,O=example.com,C=US
+DEBUG:root:* start date: Jul 09 20:04:25 2018 GMT
+DEBUG:root:* expire date: Jun 14 20:04:25 2023 GMT
+DEBUG:root:* common name: rhvm.example.com
+DEBUG:root:* issuer: CN=rhvm.example.com.48737,O=example.com,C=US
+DEBUG:root:* NSS error -12276 (SSL_ERROR_BAD_CERT_DOMAIN)
+DEBUG:root:* Unable to communicate securely with peer: requested domain name does not match the server's certificate.
+DEBUG:root:* Closing connection 0
+DEBUG:root:* About to connect() to 192.168.200.100 port 443 (#0)
+DEBUG:root:* Trying 192.168.200.100...
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#0)
+DEBUG:root:* Initializing NSS with certpath: sql:/etc/pki/nssdb
+DEBUG:root:* CAfile: prod-ca.pem
+DEBUG:root:*   CApath: none
+DEBUG:root:* Server certificate:
+DEBUG:root:* subject: CN=rhvm.example.com,O=example.com,C=US
+DEBUG:root:* start date: Jul 09 20:04:25 2018 GMT
+DEBUG:root:* expire date: Jun 14 20:04:25 2023 GMT
+DEBUG:root:* common name: rhvm.example.com
+DEBUG:root:* issuer: CN=rhvm.example.com.48737,O=example.com,C=US
+DEBUG:root:* NSS error -12276 (SSL_ERROR_BAD_CERT_DOMAIN)
+DEBUG:root:* Unable to communicate securely with peer: requested domain name does not match the server's certificate.
+DEBUG:root:* Closing connection 0
+DEBUG:root:* About to connect() to 192.168.200.100 port 443 (#0)
+DEBUG:root:* Trying 192.168.200.100...
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#0)
+DEBUG:root:* Initializing NSS with certpath: sql:/etc/pki/nssdb
+DEBUG:root:* skipping SSL peer certificate verification
+DEBUG:root:* SSL connection using TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+DEBUG:root:* Server certificate:
+DEBUG:root:* subject: CN=rhvm.example.com,O=example.com,C=US
+DEBUG:root:* start date: Jul 09 20:04:25 2018 GMT
+DEBUG:root:* expire date: Jun 14 20:04:25 2023 GMT
+DEBUG:root:* common name: rhvm.example.com
+DEBUG:root:* issuer: CN=rhvm.example.com.48737,O=example.com,C=US
+DEBUG:root:< POST /ovirt-engine/sso/oauth/token HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Accept: application/json
+DEBUG:root:< Content-Length: 85
+DEBUG:root:< Content-Type: application/x-www-form-urlencoded
+DEBUG:root:< username=admin%40internal&scope=ovirt-app-api&password=r3dh4t1%21&grant_type=password
+DEBUG:root:* upload completely sent off: 85 out of 85 bytes
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:49 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Set-Cookie: locale=en_US; path=/; secure; HttpOnly; Max-Age=2147483647; Expires=Mon, 07-Oct-2086 23:34:56 GMT
+DEBUG:root:> X-XSS-PROTECTION: 1; MODE=BLOCK
+DEBUG:root:> X-CONTENT-TYPE-OPTIONS: NOSNIFF
+DEBUG:root:> X-FRAME-OPTIONS: SAMEORIGIN
+DEBUG:root:> Content-Type: application/json
+DEBUG:root:> Content-Length: 310
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> {"access_token":"LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A","scope":"ovirt-app-api ovirt-ext=token-info:authz-search ovirt-ext=token-info:public-authz-search ovirt-ext=token-info:validate ovirt-ext=token:password-access","exp":"1537993248000","token_type":"bearer"}
+DEBUG:root:* Connection #0 to host 192.168.200.100 left intact
+DEBUG:root:* About to connect() to 192.168.200.100 port 443 (#1)
+DEBUG:root:* Trying 192.168.200.100...
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:* skipping SSL peer certificate verification
+DEBUG:root:* SSL connection using TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+DEBUG:root:* Server certificate:
+DEBUG:root:* subject: CN=rhvm.example.com,O=example.com,C=US
+DEBUG:root:* start date: Jul 09 20:04:25 2018 GMT
+DEBUG:root:* expire date: Jun 14 20:04:25 2023 GMT
+DEBUG:root:* common name: rhvm.example.com
+DEBUG:root:* issuer: CN=rhvm.example.com.48737,O=example.com,C=US
+DEBUG:root:< GET /ovirt-engine/api/hosts?search=status%3Dup HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:49 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 15424
+DEBUG:root:> Correlation-Id: dfefbbfa-84db-4809-a6fd-b67b2852167a
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <hosts>
+DEBUG:root:>     <host href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643" id="4fcfe07a-eb98-4911-bc42-d9ec24eda643">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/refresh" rel="refresh"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/fence" rel="fence"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/install" rel="install"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/activate" rel="activate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/deactivate" rel="deactivate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/upgrade" rel="upgrade"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/approve" rel="approve"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/commitnetconfig" rel="commitnetconfig"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/upgradecheck" rel="upgradecheck"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/syncallnetworks" rel="syncallnetworks"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/setupnetworks" rel="setupnetworks"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/forceselectspm" rel="forceselectspm"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/enrollcertificate" rel="enrollcertificate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/iscsidiscover" rel="iscsidiscover"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/iscsilogin" rel="iscsilogin"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/unregisteredstoragedomainsdiscover" rel="unregisteredstoragedomainsdiscover"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhvh01.example.com</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/numanodes" rel="numanodes"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/devices" rel="devices"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/hooks" rel="hooks"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/storage" rel="storage"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/networkattachments" rel="networkattachments"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/storageconnectionextensions" rel="storageconnectionextensions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/unmanagednetworks" rel="unmanagednetworks"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/externalnetworkproviderconfigurations" rel="externalnetworkproviderconfigurations"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/katelloerrata" rel="katelloerrata"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/tags" rel="tags"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/fenceagents" rel="fenceagents"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/affinitylabels" rel="affinitylabels"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/nics" rel="nics"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/statistics" rel="statistics"/>
+DEBUG:root:>         <address>rhvh01.example.com</address>
+DEBUG:root:>         <auto_numa_status>disable</auto_numa_status>
+DEBUG:root:>         <certificate>
+DEBUG:root:>             <organization>example.com</organization>
+DEBUG:root:>             <subject>O=example.com,CN=rhvh01.example.com</subject>
+DEBUG:root:>         </certificate>
+DEBUG:root:>         <cpu>
+DEBUG:root:>             <name>Intel Core i7 9xx (Nehalem Class Core i7)</name>
+DEBUG:root:>             <speed>2295</speed>
+DEBUG:root:>             <topology>
+DEBUG:root:>                 <cores>1</cores>
+DEBUG:root:>                 <sockets>4</sockets>
+DEBUG:root:>                 <threads>1</threads>
+DEBUG:root:>             </topology>
+DEBUG:root:>         </cpu>
+DEBUG:root:>         <device_passthrough>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>         </device_passthrough>
+DEBUG:root:>         <display>
+DEBUG:root:>             <address>5rhvh01-latamsmevfariasrhv-ri8exdxy.srv.ravcloud.com</address>
+DEBUG:root:>         </display>
+DEBUG:root:>         <external_status>ok</external_status>
+DEBUG:root:>         <hardware_information>
+DEBUG:root:>             <manufacturer>Bochs</manufacturer>
+DEBUG:root:>             <product_name>Bochs</product_name>
+DEBUG:root:>             <supported_rng_sources>
+DEBUG:root:>                 <supported_rng_source>random</supported_rng_source>
+DEBUG:root:>                 <supported_rng_source>hwrng</supported_rng_source>
+DEBUG:root:>             </supported_rng_sources>
+DEBUG:root:>             <uuid>564DADCC-A795-99FC-F2EA-24AFEAD600C1</uuid>
+DEBUG:root:>         </hardware_information>
+DEBUG:root:>         <iscsi>
+DEBUG:root:>             <initiator>iqn.1994-05.com.redhat:276f465c43bd</initiator>
+DEBUG:root:>         </iscsi>
+DEBUG:root:>         <kdump_status>disabled</kdump_status>
+DEBUG:root:>         <ksm>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>         </ksm>
+DEBUG:root:>         <libvirt_version>
+DEBUG:root:>             <build>0</build>
+DEBUG:root:>             <full_version>libvirt-3.9.0-14.el7_5.6</full_version>
+DEBUG:root:>             <major>3</major>
+DEBUG:root:>             <minor>9</minor>
+DEBUG:root:>             <revision>0</revision>
+DEBUG:root:>         </libvirt_version>
+DEBUG:root:>         <max_scheduling_memory>16251879424</max_scheduling_memory>
+DEBUG:root:>         <memory>16656629760</memory>
+DEBUG:root:>         <numa_supported>false</numa_supported>
+DEBUG:root:>         <os>
+DEBUG:root:>             <custom_kernel_cmdline></custom_kernel_cmdline>
+DEBUG:root:>             <reported_kernel_cmdline>BOOT_IMAGE=/rhvh-4.2.4.3-0.20180627.0+1/vmlinuz-3.10.0-862.6.3.el7.x86_64 root=/dev/rhvh/rhvh-4.2.4.3-0.20180627.0+1 ro crashkernel=auto rd.lvm.lv=rhvh/swap rd.lvm.lv=rhvh/rhvh-4.2.4.3-0.20180627.0+1 rhgb quiet LANG=en_US.UTF-8 img.bootid=rhvh-4.2.4.3-0.20180627.0+1</reported_kernel_cmdline>
+DEBUG:root:>             <type>RHEL</type>
+DEBUG:root:>             <version>
+DEBUG:root:>                 <full_version>7.5 - 4.3.el7</full_version>
+DEBUG:root:>                 <major>7</major>
+DEBUG:root:>                 <minor>5</minor>
+DEBUG:root:>             </version>
+DEBUG:root:>         </os>
+DEBUG:root:>         <port>54321</port>
+DEBUG:root:>         <power_management>
+DEBUG:root:>             <automatic_pm_enabled>true</automatic_pm_enabled>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>             <kdump_detection>true</kdump_detection>
+DEBUG:root:>             <pm_proxies/>
+DEBUG:root:>         </power_management>
+DEBUG:root:>         <protocol>stomp</protocol>
+DEBUG:root:>         <se_linux>
+DEBUG:root:>             <mode>enforcing</mode>
+DEBUG:root:>         </se_linux>
+DEBUG:root:>         <spm>
+DEBUG:root:>             <priority>5</priority>
+DEBUG:root:>             <status>none</status>
+DEBUG:root:>         </spm>
+DEBUG:root:>         <ssh>
+DEBUG:root:>             <fingerprint>SHA256:zk3oHkDv6UyEI7t0yw84n2mvilgx90HrWUtEkTn0JIE</fingerprint>
+DEBUG:root:>             <port>22</port>
+DEBUG:root:>         </ssh>
+DEBUG:root:>         <status>up</status>
+DEBUG:root:>         <summary>
+DEBUG:root:>             <active>0</active>
+DEBUG:root:>             <migrating>0</migrating>
+DEBUG:root:>             <total>0</total>
+DEBUG:root:>         </summary>
+DEBUG:root:>         <transparent_hugepages>
+DEBUG:root:>             <enabled>true</enabled>
+DEBUG:root:>         </transparent_hugepages>
+DEBUG:root:>         <type>ovirt_node</type>
+DEBUG:root:>         <update_available>true</update_available>
+DEBUG:root:>         <version>
+DEBUG:root:>             <build>32</build>
+DEBUG:root:>             <full_version>vdsm-4.20.32-1.el7ev</full_version>
+DEBUG:root:>             <major>4</major>
+DEBUG:root:>             <minor>20</minor>
+DEBUG:root:>             <revision>0</revision>
+DEBUG:root:>         </version>
+DEBUG:root:>         <cluster href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824" id="7d08bdfe-847c-11e8-afc8-2cc2607e1824"/>
+DEBUG:root:>     </host>
+DEBUG:root:>     <host href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e" id="3feca1cf-a488-4fc0-a755-81c165ff759e">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/refresh" rel="refresh"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/fence" rel="fence"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/inst
+DEBUG:root:> all" rel="install"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/activate" rel="activate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/deactivate" rel="deactivate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/upgrade" rel="upgrade"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/approve" rel="approve"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/commitnetconfig" rel="commitnetconfig"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/upgradecheck" rel="upgradecheck"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/syncallnetworks" rel="syncallnetworks"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/setupnetworks" rel="setupnetworks"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/forceselectspm" rel="forceselectspm"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/enrollcertificate" rel="enrollcertificate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/iscsidiscover" rel="iscsidiscover"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/iscsilogin" rel="iscsilogin"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/unregisteredstoragedomainsdiscover" rel="unregisteredstoragedomainsdiscover"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhvh02.example.com</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/numanodes" rel="numanodes"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/devices" rel="devices"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/hooks" rel="hooks"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/storage" rel="storage"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/networkattachments" rel="networkattachments"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/storageconnectionextensions" rel="storageconnectionextensions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/unmanagednetworks" rel="unmanagednetworks"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/externalnetworkproviderconfigurations" rel="externalnetworkproviderconfigurations"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/katelloerrata" rel="katelloerrata"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/tags" rel="tags"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/fenceagents" rel="fenceagents"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/affinitylabels" rel="affinitylabels"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/nics" rel="nics"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/statistics" rel="statistics"/>
+DEBUG:root:>         <address>rhvh02.example.com</address>
+DEBUG:root:>         <auto_numa_status>disable</auto_numa_status>
+DEBUG:root:>         <certificate>
+DEBUG:root:>             <organization>example.com</organization>
+DEBUG:root:>             <subject>O=example.com,CN=rhvh02.example.com</subject>
+DEBUG:root:>         </certificate>
+DEBUG:root:>         <cpu>
+DEBUG:root:>             <name>Intel Core i7 9xx (Nehalem Class Core i7)</name>
+DEBUG:root:>             <speed>2295</speed>
+DEBUG:root:>             <topology>
+DEBUG:root:>                 <cores>1</cores>
+DEBUG:root:>                 <sockets>4</sockets>
+DEBUG:root:>                 <threads>1</threads>
+DEBUG:root:>             </topology>
+DEBUG:root:>         </cpu>
+DEBUG:root:>         <device_passthrough>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>         </device_passthrough>
+DEBUG:root:>         <display>
+DEBUG:root:>             <address>5rhvh02-latamsmevfariasrhv-qm3u37rl.srv.ravcloud.com</address>
+DEBUG:root:>         </display>
+DEBUG:root:>         <external_status>ok</external_status>
+DEBUG:root:>         <hardware_information>
+DEBUG:root:>             <manufacturer>Bochs</manufacturer>
+DEBUG:root:>             <product_name>Bochs</product_name>
+DEBUG:root:>             <supported_rng_sources>
+DEBUG:root:>                 <supported_rng_source>random</supported_rng_source>
+DEBUG:root:>                 <supported_rng_source>hwrng</supported_rng_source>
+DEBUG:root:>             </supported_rng_sources>
+DEBUG:root:>             <uuid>564DADCC-A795-99FC-F2EA-24AFEAD600C2</uuid>
+DEBUG:root:>         </hardware_information>
+DEBUG:root:>         <iscsi>
+DEBUG:root:>             <initiator>iqn.1994-05.com.redhat:6b43b4eab370</initiator>
+DEBUG:root:>         </iscsi>
+DEBUG:root:>         <kdump_status>disabled</kdump_status>
+DEBUG:root:>         <ksm>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>         </ksm>
+DEBUG:root:>         <libvirt_version>
+DEBUG:root:>             <build>0</build>
+DEBUG:root:>             <full_version>libvirt-3.9.0-14.el7_5.6</full_version>
+DEBUG:root:>             <major>3</major>
+DEBUG:root:>             <minor>9</minor>
+DEBUG:root:>             <revision>0</revision>
+DEBUG:root:>         </libvirt_version>
+DEBUG:root:>         <max_scheduling_memory>16251879424</max_scheduling_memory>
+DEBUG:root:>         <memory>16656629760</memory>
+DEBUG:root:>         <numa_supported>false</numa_supported>
+DEBUG:root:>         <os>
+DEBUG:root:>             <custom_kernel_cmdline></custom_kernel_cmdline>
+DEBUG:root:>             <reported_kernel_cmdline>BOOT_IMAGE=/rhvh-4.2.4.3-0.20180627.0+1/vmlinuz-3.10.0-862.6.3.el7.x86_64 root=/dev/rhvh/rhvh-4.2.4.3-0.20180627.0+1 ro crashkernel=auto rd.lvm.lv=rhvh/swap rd.lvm.lv=rhvh/rhvh-4.2.4.3-0.20180627.0+1 rhgb quiet LANG=en_US.UTF-8 img.bootid=rhvh-4.2.4.3-0.20180627.0+1</reported_kernel_cmdline>
+DEBUG:root:>             <type>RHEL</type>
+DEBUG:root:>             <version>
+DEBUG:root:>                 <full_version>7.5 - 4.3.el7</full_version>
+DEBUG:root:>                 <major>7</major>
+DEBUG:root:>                 <minor>5</minor>
+DEBUG:root:>             </version>
+DEBUG:root:>         </os>
+DEBUG:root:>         <port>54321</port>
+DEBUG:root:>         <power_management>
+DEBUG:root:>             <automatic_pm_enabled>true</automatic_pm_enabled>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>             <kdump_detection>true</kdump_detection>
+DEBUG:root:>             <pm_proxies/>
+DEBUG:root:>         </power_management>
+DEBUG:root:>         <protocol>stomp</protocol>
+DEBUG:root:>         <se_linux>
+DEBUG:root:>             <mode>enforcing</mode>
+DEBUG:root:>         </se_linux>
+DEBUG:root:>         <spm>
+DEBUG:root:>             <priority>5</priority>
+DEBUG:root:>             <status>spm</status>
+DEBUG:root:>         </spm>
+DEBUG:root:>         <ssh>
+DEBUG:root:>             <fingerprint>SHA256:K8FO23egzgforMAT1f9WcfiouEhNIZ6PjJGn2kG7dpU</fingerprint>
+DEBUG:root:>             <port>22</port>
+DEBUG:root:>         </ssh>
+DEBUG:root:>         <status>up</status>
+DEBUG:root:>         <summary>
+DEBUG:root:>             <active>0</active>
+DEBUG:root:>             <migrating>0</migrating>
+DEBUG:root:>             <total>0</total>
+DEBUG:root:>         </summary>
+DEBUG:root:>         <transparent_hugepages>
+DEBUG:root:>             <enabled>true</enabled>
+DEBUG:root:>         </transparent_hugepages>
+DEBUG:root:>         <type>ovirt_node</type>
+DEBUG:root:>         <update_available>true</update_available>
+DEBUG:root:>         <version>
+DEBUG:root:>             <build>32</build>
+DEBUG:root:>             <full_version>vdsm-4.20.32-1.el7ev</full_version>
+DEBUG:root:>             <major>4</major>
+DEBUG:root:>             <minor>20</minor>
+DEBUG:root:>             <revision>0</revision>
+DEBUG:root:>         </version>
+DEBUG:root:>         <cluster href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824" id="7d08bdfe-847c-11e8-afc8-2cc2607e1824"/>
+DEBUG:root:>     </host>
+DEBUG:root:> </hosts>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643/storage HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:49 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 73
+DEBUG:root:> Correlation-Id: 8f3cf446-76a1-4027-babe-d8cf664cb52e
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <host_storages/>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/hosts/3feca1cf-a488-4fc0-a755-81c165ff759e/storage HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 73
+DEBUG:root:> Correlation-Id: aa498e14-daee-4b49-aa9d-b63f38dbea7c
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <host_storages/>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/disks HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Correlation-Id: 987ab9a6-b3b3-4a3a-bbf6-64cb34894d5e
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> Transfer-Encoding: chunked
+DEBUG:root:> 
+DEBUG:root:> 1ff8
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <disks>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07" id="eb42daab-45e5-4a5d-a170-692c19902e07">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>OVF_STORE</name>
+DEBUG:root:>         <description>OVF_STORE</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/eb42daab-45e5-4a5d-a170-692c19902e07/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>12288</actual_size>
+DEBUG:root:>         <alias>OVF_STORE</alias>
+DEBUG:root:>         <content_type>ovf_store</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>92df58c1-e2ad-49f5-871b-98e0c5bbea6f</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>134217728</provisioned_size>
+DEBUG:root:>         <shareable>true</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c" id="5e5fb3e9-69d2-441c-8a41-9c3366df022c">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>OVF_STORE</name>
+DEBUG:root:>         <description>OVF_STORE</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/5e5fb3e9-69d2-441c-8a41-9c3366df022c/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>12288</actual_size>
+DEBUG:root:>         <alias>OVF_STORE</alias>
+DEBUG:root:>         <content_type>ovf_store</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>535989b8-fee5-4ce4-a5e3-c1dab58496a0</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>134217728</provisioned_size>
+DEBUG:root:>         <shareable>true</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9" id="d309eab1-1766-4fa9-a572-10b7236d72f9">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>OVF_STORE</name>
+DEBUG:root:>         <description>OVF_STORE</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/d309eab1-1766-4fa9-a572-10b7236d72f9/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>12288</actual_size>
+DEBUG:root:>         <alias>OVF_STORE</alias>
+DEBUG:root:>         <content_type>ovf_store</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>6ebf82cd-de82-4f50-9825-7abebb66f30f</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>134217728</provisioned_size>
+DEBUG:root:>         <shareable>true</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/f7da9c12-f90d-400d-ad9c-b648ddc56fb9" id="f7da9c12-f90d-400d-ad9c-b648ddc56fb9"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da" id="9207384c-37cc-4211-b19e-6f87917af8da"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503" id="aaea8f1e-b68d-4117-b468-eb175f7e7503">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>OVF_STORE</name>
+DEBUG:root:>         <description>OVF_STORE</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/aaea8f1e-b68d-4117-b468-eb175f7e7503/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>12288</actual_size>
+DEBUG:root:>         <alias>OVF_STORE</alias>
+DEBUG:root:>         <content_type>ovf_store</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>6b20daff-ab74-461e-b85d-da41dc5d2499</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>134217728</provisioned_size>
+DEBUG:root:>         <shareable>true</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/f7da9c12-f90d-400d-ad9c-b648ddc56fb9" id="f7da9c12-f90d-400d-ad9c-b648ddc56fb9"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da" id="9207384c-37cc-4211-b19e-6f87917af8da"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a" id="f5fbbc28-402a-4453-923e-00eb8cd5976a">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f5fbb
+DEBUG:root:> 
+DEBUG:root:> 1ff8
+DEBUG:root:> c28-402a-4453-923e-00eb8cd5976a/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/f5fbbc28-402a-4453-923e-00eb8cd5976a/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>576126976</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>6a451a7f-8b4f-4937-9a62-4856b911542f</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>576126976</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282" id="671d9986-5ea0-4914-baf4-e18bbed30282">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>win2012r2_Disk1</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/671d9986-5ea0-4914-baf4-e18bbed30282/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>8932508672</actual_size>
+DEBUG:root:>         <alias>win2012r2_Disk1</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>7a69f794-1cd3-454e-bdaa-00cdc1c8d007</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>42949672960</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>8932508672</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959" id="8e81aa7e-74bb-4abb-952e-27857dcc4959">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>snapshot_memory</name>
+DEBUG:root:>         <description>Memory snapshot disk for snapshot 'working app' of VM 'database' (VM ID: '7c380d6e-072b-4ba5-b244-30076332c3e4')</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/8e81aa7e-74bb-4abb-952e-27857dcc4959/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>410755072</actual_size>
+DEBUG:root:>         <alias>snapshot_memory</alias>
+DEBUG:root:>         <content_type>memory_dump_volume</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>5ea177c8-c47e-4673-8d54-8119d70b5a16</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>1384120320</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>410755072</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2" id="c216eb70-aa79-4d4a-a9fe-199dd8a105b2">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>snapshot_metadata</name>
+DEBUG:root:>         <description>Memory snapshot disk for snapshot 'working app' of VM 'database' (VM ID: '7c380d6e-072b-4ba5-b244-30076332c3e4')</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/c216eb70-aa79-4d4a-a9fe-199dd8a105b2/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>12288</actual_size>
+DEBUG:root:>         <alias>snapshot_metadata</alias>
+DEBUG:root:>         <content_type>memory_metadata_volume</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>719b0bf5-882f-43d7-b585-9fdf3c30c1b4</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10240</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>12288</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582" id="896b34a7-0784-49ba-93d5-6fb9ceba1582">
+DEBUG:root:>         <actions>
+DEBUG:root:> 
+DEBUG:root:> 10
+DEBUG:root:> <link href="/ovi
+DEBUG:root:> 
+DEBUG:root:> 250
+DEBUG:root:> rt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>
+DEBUG:root:> 
+DEBUG:root:> 1ff8
+DEBUG:root:> RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/896b34a7-0784-49ba-93d5-6fb9ceba1582/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>390406144</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>18ce8d44-7a50-4704-a326-3a5a8efa59c2</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>390406144</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b" id="aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>snapshot_memory</name>
+DEBUG:root:>         <description>Memory snapshot disk for snapshot 'wp-all-in-one-working' of VM 'wordpress' (VM ID: '7affe802-93a3-428e-98a5-bf06d4cf9fc7')</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/aa3fd7b0-511b-4df3-97af-f5fdd9a98f9b/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>928595968</actual_size>
+DEBUG:root:>         <alias>snapshot_memory</alias>
+DEBUG:root:>         <content_type>memory_dump_volume</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>b0611974-e122-4212-a91a-6b42ef0b0b59</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>1384120320</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>928595968</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15" id="0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>OVF_STORE</name>
+DEBUG:root:>         <description>OVF_STORE</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/0bfe03b4-83d1-493a-bd0c-3a2ef4fd1f15/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>134217728</actual_size>
+DEBUG:root:>         <alias>OVF_STORE</alias>
+DEBUG:root:>         <content_type>ovf_store</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>5c5ee3c4-5a80-42b7-8259-07cef5440d51</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>134217728</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>134217728</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b" id="f9938ac4-9948-4e9d-90b6-43d32f41648b">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>snapshot_metadata</name>
+DEBUG:root:>         <description>Memory snapshot disk for snapshot 'wp-all-in-one-working' of VM 'wordpress' (VM ID: '7affe802-93a3-428e-98a5-bf06d4cf9fc7')</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/f9938ac4-9948-4e9d-90b6-43d32f41648b/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>12288</actual_size>
+DEBUG:root:>         <alias>snapshot_metadata</alias>
+DEBUG:root:>         <content_type>memory_metadata_volume</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>167a67d0-30e4-48fc-b8a1-739e816e00d2</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10240</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>12288</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476" id="c592f317-4048-4447-89c6-68f32de75476">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de754
+DEBUG:root:> 
+DEBUG:root:> 1ff8
+DEBUG:root:> 76/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>win2012r2_Disk1</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/c592f317-4048-4447-89c6-68f32de75476/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>1841623040</actual_size>
+DEBUG:root:>         <alias>win2012r2_Disk1</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>242f3ed6-90a8-437d-9d63-ea1dd67e52dd</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>42949672960</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>6638604288</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19" id="90373784-5853-4c9a-a8f5-8e279d7edf19">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>win2012r2_Disk1</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/90373784-5853-4c9a-a8f5-8e279d7edf19/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>8684957696</actual_size>
+DEBUG:root:>         <alias>win2012r2_Disk1</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>b35ad325-153e-44e0-bb77-24b58aa80723</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>42949672960</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>8684957696</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1" id="df87fb74-087f-4ef5-80ec-9cb7af0c57a1">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/df87fb74-087f-4ef5-80ec-9cb7af0c57a1/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>107544576</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>0e0ec47b-8767-4e35-8f95-bca157fd0080</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>2394124288</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e" id="b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/b5ce77bf-6d3c-4350-b32a-9c7a8fb2022e/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>1421561856</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>292e0fa1-3bee-4ed3-b244-84107df128d1</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>1421561856</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a
+DEBUG:root:> 
+DEBUG:root:> 10
+DEBUG:root:> 2b83a-847c-11e8-
+DEBUG:root:> 
+DEBUG:root:> 2e4
+DEBUG:root:> 8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade" id="0d39605e-e3e6-4f89-97ba-8102d3bb8ade">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/move" rel="move"/>
+DEBUG:root:> 
+DEBUG:root:> 1ff8
+DEBUG:root:> <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud-base</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/0d39605e-e3e6-4f89-97ba-8102d3bb8ade/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>691695616</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud-base</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>5a314457-8b4a-4df0-adbf-355c39f870b4</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v2</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>691695616</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/11b72da4-53ba-44ad-aac4-cdaedb412c56" id="11b72da4-53ba-44ad-aac4-cdaedb412c56"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb" id="44fda75c-7e43-4e67-b5ce-3b8a62cca5fb">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/44fda75c-7e43-4e67-b5ce-3b8a62cca5fb/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>38563840</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>c24a6eeb-cba3-456d-bc71-ecdf492a9555</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>1785581568</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb" id="ce34d35b-c285-45f4-b2cc-0645ebab62eb">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/ce34d35b-c285-45f4-b2cc-0645ebab62eb/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>197120</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>3602861b-629a-428e-8f86-18767dd4f502</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>197120</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4" id="56213813-81db-4811-83aa-0fb12270b2a4">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/56213813-81db-4811-83aa-0fb12270b2a4/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>1421860864</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>7a1a70ec-0a56-429f-91de-7816f3c9b784</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>1421860864</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_do
+DEBUG:root:> 
+DEBUG:root:> 1ff8
+DEBUG:root:> mains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e" id="6dc0e4b8-83ac-4a80-8d8e-21ae3252015e">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>win2012r2_Disk1</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/6dc0e4b8-83ac-4a80-8d8e-21ae3252015e/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>10328997888</actual_size>
+DEBUG:root:>         <alias>win2012r2_Disk1</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>3607120d-6bf2-4aaf-983e-ebd2700f3082</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>42949672960</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>10328997888</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a" id="7ef14e8c-0daf-47a8-885b-6117eaf5889a">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>rhel-7.5-cloud</name>
+DEBUG:root:>         <description>RHEL 7.5 base cloud image</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/7ef14e8c-0daf-47a8-885b-6117eaf5889a/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>1421299712</actual_size>
+DEBUG:root:>         <alias>rhel-7.5-cloud</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>cow</format>
+DEBUG:root:>         <image_id>a099a6a1-92d1-4e1a-bbb3-60b74b88d94c</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>10737418240</provisioned_size>
+DEBUG:root:>         <qcow_version>qcow2_v3</qcow_version>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>1421299712</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b" id="0c67d444-e6c8-4680-989b-83cb42ec826b">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>virtio-win-1.9.4_amd64</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/0c67d444-e6c8-4680-989b-83cb42ec826b/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>2949120</actual_size>
+DEBUG:root:>         <alias>virtio-win-1.9.4_amd64</alias>
+DEBUG:root:>         <content_type>data</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>66b3fc59-2fd0-4449-a7eb-467599db6801</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>1073741824</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>2949120</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5" id="f45c27bd-410e-408c-8258-dc829be24da5">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>RHV-toolsSetup_4.2_5.iso</name>
+DEBUG:root:>         <description>RHV-toolsSetup_4.2_5.iso</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/f45c27bd-410e-408c-8258-dc829be24da5/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>0</actual_size>
+DEBUG:root:>         <alias>RHV-toolsSetup_4.2_5.iso</alias>
+DEBUG:root:>         <content_type>iso</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>168756e9-ec87-45c7-94ee-5949bf0b81a2</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>759447552</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>true</sparse>
+DEBUG:root:>         <status>locked</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>0</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/f7da9c12-f90d-400d-a
+DEBUG:root:> 
+DEBUG:root:> 10
+DEBUG:root:> d9c-b648ddc56fb9
+DEBUG:root:> 
+DEBUG:root:> 43
+DEBUG:root:> " id="f7da9c12-f90d-400d-ad9c-b648ddc56fb9"/>
+DEBUG:root:>         <quota href="
+DEBUG:root:> 
+DEBUG:root:> 9ac
+DEBUG:root:> /ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da" id="9207384c-37cc-4211-b19e-6f87917af8da"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:>     <disk href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d" id="770b6ac7-1973-4097-a44f-d50ce6d80a0d">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/sparsify" rel="sparsify"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/export" rel="export"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/move" rel="move"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/refreshlun" rel="refreshlun"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/copy" rel="copy"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>OVF_STORE</name>
+DEBUG:root:>         <description>OVF_STORE</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/disks/770b6ac7-1973-4097-a44f-d50ce6d80a0d/statistics" rel="statistics"/>
+DEBUG:root:>         <actual_size>134217728</actual_size>
+DEBUG:root:>         <alias>OVF_STORE</alias>
+DEBUG:root:>         <content_type>ovf_store</content_type>
+DEBUG:root:>         <format>raw</format>
+DEBUG:root:>         <image_id>54aebbd6-8bd0-4cc4-9d80-810f30b4ffd8</image_id>
+DEBUG:root:>         <propagate_errors>false</propagate_errors>
+DEBUG:root:>         <provisioned_size>134217728</provisioned_size>
+DEBUG:root:>         <shareable>false</shareable>
+DEBUG:root:>         <sparse>false</sparse>
+DEBUG:root:>         <status>ok</status>
+DEBUG:root:>         <storage_type>image</storage_type>
+DEBUG:root:>         <total_size>134217728</total_size>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <disk_profile href="/ovirt-engine/api/diskprofiles/9dc6b131-3013-42c5-b714-0a43e3c596d0" id="9dc6b131-3013-42c5-b714-0a43e3c596d0"/>
+DEBUG:root:>         <quota href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas/89a2b83a-847c-11e8-8064-2cc2607e1824" id="89a2b83a-847c-11e8-8064-2cc2607e1824"/>
+DEBUG:root:>         <storage_domains>
+DEBUG:root:>             <storage_domain href="/ovirt-engine/api/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e"/>
+DEBUG:root:>         </storage_domains>
+DEBUG:root:>     </disk>
+DEBUG:root:> </disks>
+DEBUG:root:> 
+DEBUG:root:> 0
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/affinitylabels HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 539
+DEBUG:root:> Correlation-Id: ede5c513-7981-43a2-863a-153559e8ae6c
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <affinity_labels>
+DEBUG:root:>     <affinity_label href="/ovirt-engine/api/affinitylabels/c0a6cf2d-3fe5-4038-a7b5-80804f7828e3" id="c0a6cf2d-3fe5-4038-a7b5-80804f7828e3">
+DEBUG:root:>         <name>Windows</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/affinitylabels/c0a6cf2d-3fe5-4038-a7b5-80804f7828e3/vms" rel="vms"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/affinitylabels/c0a6cf2d-3fe5-4038-a7b5-80804f7828e3/hosts" rel="hosts"/>
+DEBUG:root:>         <read_only>false</read_only>
+DEBUG:root:>     </affinity_label>
+DEBUG:root:> </affinity_labels>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/domains HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 668
+DEBUG:root:> Correlation-Id: d41e2f99-9fe3-4585-b18c-6d998b8fbcb9
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <domains>
+DEBUG:root:>     <domain href="/ovirt-engine/api/domains/696E7465726E616C2D617574687A" id="696E7465726E616C2D617574687A">
+DEBUG:root:>         <name>internal-authz</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/domains/696E7465726E616C2D617574687A/groups" rel="groups"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/domains/696E7465726E616C2D617574687A/users" rel="users"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/domains/696E7465726E616C2D617574687A/groups?search={query}" rel="groups/search"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/domains/696E7465726E616C2D617574687A/users?search={query}" rel="users/search"/>
+DEBUG:root:>     </domain>
+DEBUG:root:> </domains>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/vnicprofiles HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 1746
+DEBUG:root:> Correlation-Id: b2621552-53a7-4498-859c-7a8416672ff6
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <vnic_profiles>
+DEBUG:root:>     <vnic_profile href="/ovirt-engine/api/vnicprofiles/8d0bbee1-8424-4cb9-906f-677b24c377ad" id="8d0bbee1-8424-4cb9-906f-677b24c377ad">
+DEBUG:root:>         <name>vm public net</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/vnicprofiles/8d0bbee1-8424-4cb9-906f-677b24c377ad/permissions" rel="permissions"/>
+DEBUG:root:>         <pass_through>
+DEBUG:root:>             <mode>disabled</mode>
+DEBUG:root:>         </pass_through>
+DEBUG:root:>         <port_mirroring>false</port_mirroring>
+DEBUG:root:>         <network href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495" id="daa4c056-628f-47f3-b3e1-49e89e1b9495"/>
+DEBUG:root:>         <network_filter href="/ovirt-engine/api/networkfilters/85cf72de-847c-11e8-92f7-2cc2607e1824" id="85cf72de-847c-11e8-92f7-2cc2607e1824"/>
+DEBUG:root:>     </vnic_profile>
+DEBUG:root:>     <vnic_profile href="/ovirt-engine/api/vnicprofiles/4e680718-f0e8-45ef-ac30-349cb73bc6b1" id="4e680718-f0e8-45ef-ac30-349cb73bc6b1">
+DEBUG:root:>         <name>limited_bw</name>
+DEBUG:root:>         <description>Limited bandwidth</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/vnicprofiles/4e680718-f0e8-45ef-ac30-349cb73bc6b1/permissions" rel="permissions"/>
+DEBUG:root:>         <pass_through>
+DEBUG:root:>             <mode>disabled</mode>
+DEBUG:root:>         </pass_through>
+DEBUG:root:>         <port_mirroring>false</port_mirroring>
+DEBUG:root:>         <network href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495" id="daa4c056-628f-47f3-b3e1-49e89e1b9495"/>
+DEBUG:root:>         <network_filter href="/ovirt-engine/api/networkfilters/85cf72de-847c-11e8-92f7-2cc2607e1824" id="85cf72de-847c-11e8-92f7-2cc2607e1824"/>
+DEBUG:root:>         <qos href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/qoss/f5885075-3fbc-4f12-bc23-3c225f6fad00" id="f5885075-3fbc-4f12-bc23-3c225f6fad00"/>
+DEBUG:root:>     </vnic_profile>
+DEBUG:root:> </vnic_profiles>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/networks HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 2512
+DEBUG:root:> Correlation-Id: 36b3b9fd-3934-48d8-8ac9-283d073891fc
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <networks>
+DEBUG:root:>     <network href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009" id="00000000-0000-0000-0000-000000000009">
+DEBUG:root:>         <name>ovirtmgmt</name>
+DEBUG:root:>         <description>Management Network</description>
+DEBUG:root:>         <comment></comment>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009/vnicprofiles" rel="vnicprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009/networklabels" rel="networklabels"/>
+DEBUG:root:>         <mtu>0</mtu>
+DEBUG:root:>         <stp>false</stp>
+DEBUG:root:>         <usages/>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>     </network>
+DEBUG:root:>     <network href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f" id="c297e5c8-ab2f-44fb-b28a-0bd311ffb32f">
+DEBUG:root:>         <name>storage</name>
+DEBUG:root:>         <description>Storage access</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f/vnicprofiles" rel="vnicprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f/networklabels" rel="networklabels"/>
+DEBUG:root:>         <mtu>0</mtu>
+DEBUG:root:>         <stp>false</stp>
+DEBUG:root:>         <usages/>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>     </network>
+DEBUG:root:>     <network href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495" id="daa4c056-628f-47f3-b3e1-49e89e1b9495">
+DEBUG:root:>         <name>vm public net</name>
+DEBUG:root:>         <description>vm public traffic</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495/vnicprofiles" rel="vnicprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495/networklabels" rel="networklabels"/>
+DEBUG:root:>         <mtu>0</mtu>
+DEBUG:root:>         <stp>false</stp>
+DEBUG:root:>         <usages>
+DEBUG:root:>             <usage>vm</usage>
+DEBUG:root:>         </usages>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>     </network>
+DEBUG:root:> </networks>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824 HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 1530
+DEBUG:root:> Correlation-Id: 76820a70-4df5-4f6e-a42c-8c263217dbcd
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824">
+DEBUG:root:>     <name>DC01</name>
+DEBUG:root:>     <description>Data Center 01</description>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/clusters" rel="clusters"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/permissions" rel="permissions"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/networks" rel="networks"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains" rel="storagedomains"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas" rel="quotas"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/qoss" rel="qoss"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/iscsibonds" rel="iscsibonds"/>
+DEBUG:root:>     <local>false</local>
+DEBUG:root:>     <quota_mode>disabled</quota_mode>
+DEBUG:root:>     <status>up</status>
+DEBUG:root:>     <storage_format>v4</storage_format>
+DEBUG:root:>     <supported_versions>
+DEBUG:root:>         <version>
+DEBUG:root:>             <major>4</major>
+DEBUG:root:>             <minor>2</minor>
+DEBUG:root:>         </version>
+DEBUG:root:>     </supported_versions>
+DEBUG:root:>     <version>
+DEBUG:root:>         <major>4</major>
+DEBUG:root:>         <minor>2</minor>
+DEBUG:root:>     </version>
+DEBUG:root:>     <mac_pool href="/ovirt-engine/api/macpools/58ca604b-017d-0374-0220-00000000014e" id="58ca604b-017d-0374-0220-00000000014e"/>
+DEBUG:root:> </data_center>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/networks HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 2512
+DEBUG:root:> Correlation-Id: f110f8ba-8736-42ba-9ba8-03d6a37d0412
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <networks>
+DEBUG:root:>     <network href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009" id="00000000-0000-0000-0000-000000000009">
+DEBUG:root:>         <name>ovirtmgmt</name>
+DEBUG:root:>         <description>Management Network</description>
+DEBUG:root:>         <comment></comment>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009/vnicprofiles" rel="vnicprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/00000000-0000-0000-0000-000000000009/networklabels" rel="networklabels"/>
+DEBUG:root:>         <mtu>0</mtu>
+DEBUG:root:>         <stp>false</stp>
+DEBUG:root:>         <usages/>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>     </network>
+DEBUG:root:>     <network href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f" id="c297e5c8-ab2f-44fb-b28a-0bd311ffb32f">
+DEBUG:root:>         <name>storage</name>
+DEBUG:root:>         <description>Storage access</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f/vnicprofiles" rel="vnicprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/c297e5c8-ab2f-44fb-b28a-0bd311ffb32f/networklabels" rel="networklabels"/>
+DEBUG:root:>         <mtu>0</mtu>
+DEBUG:root:>         <stp>false</stp>
+DEBUG:root:>         <usages/>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>     </network>
+DEBUG:root:>     <network href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495" id="daa4c056-628f-47f3-b3e1-49e89e1b9495">
+DEBUG:root:>         <name>vm public net</name>
+DEBUG:root:>         <description>vm public traffic</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495/vnicprofiles" rel="vnicprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/networks/daa4c056-628f-47f3-b3e1-49e89e1b9495/networklabels" rel="networklabels"/>
+DEBUG:root:>         <mtu>0</mtu>
+DEBUG:root:>         <stp>false</stp>
+DEBUG:root:>         <usages>
+DEBUG:root:>             <usage>vm</usage>
+DEBUG:root:>         </usages>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>     </network>
+DEBUG:root:> </networks>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824 HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 1530
+DEBUG:root:> Correlation-Id: 3df80159-4bb2-4794-a6a0-95cca04e100c
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824">
+DEBUG:root:>     <name>DC01</name>
+DEBUG:root:>     <description>Data Center 01</description>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/clusters" rel="clusters"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/permissions" rel="permissions"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/networks" rel="networks"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains" rel="storagedomains"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas" rel="quotas"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/qoss" rel="qoss"/>
+DEBUG:root:>     <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/iscsibonds" rel="iscsibonds"/>
+DEBUG:root:>     <local>false</local>
+DEBUG:root:>     <quota_mode>disabled</quota_mode>
+DEBUG:root:>     <status>up</status>
+DEBUG:root:>     <storage_format>v4</storage_format>
+DEBUG:root:>     <supported_versions>
+DEBUG:root:>         <version>
+DEBUG:root:>             <major>4</major>
+DEBUG:root:>             <minor>2</minor>
+DEBUG:root:>         </version>
+DEBUG:root:>     </supported_versions>
+DEBUG:root:>     <version>
+DEBUG:root:>         <major>4</major>
+DEBUG:root:>         <minor>2</minor>
+DEBUG:root:>     </version>
+DEBUG:root:>     <mac_pool href="/ovirt-engine/api/macpools/58ca604b-017d-0374-0220-00000000014e" id="58ca604b-017d-0374-0220-00000000014e"/>
+DEBUG:root:> </data_center>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/datacenters HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 1665
+DEBUG:root:> Correlation-Id: c43754b6-e619-4001-b5bb-08833866458c
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <data_centers>
+DEBUG:root:>     <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824">
+DEBUG:root:>         <name>DC01</name>
+DEBUG:root:>         <description>Data Center 01</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/clusters" rel="clusters"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/networks" rel="networks"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains" rel="storagedomains"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/quotas" rel="quotas"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/qoss" rel="qoss"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/iscsibonds" rel="iscsibonds"/>
+DEBUG:root:>         <local>false</local>
+DEBUG:root:>         <quota_mode>disabled</quota_mode>
+DEBUG:root:>         <status>up</status>
+DEBUG:root:>         <storage_format>v4</storage_format>
+DEBUG:root:>         <supported_versions>
+DEBUG:root:>             <version>
+DEBUG:root:>                 <major>4</major>
+DEBUG:root:>                 <minor>2</minor>
+DEBUG:root:>             </version>
+DEBUG:root:>         </supported_versions>
+DEBUG:root:>         <version>
+DEBUG:root:>             <major>4</major>
+DEBUG:root:>             <minor>2</minor>
+DEBUG:root:>         </version>
+DEBUG:root:>         <mac_pool href="/ovirt-engine/api/macpools/58ca604b-017d-0374-0220-00000000014e" id="58ca604b-017d-0374-0220-00000000014e"/>
+DEBUG:root:>     </data_center>
+DEBUG:root:> </data_centers>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 6199
+DEBUG:root:> Correlation-Id: 0e7f0b05-3657-44d3-8884-557941a34f9c
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <storage_domains>
+DEBUG:root:>     <storage_domain href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da" id="9207384c-37cc-4211-b19e-6f87917af8da">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da/activate" rel="activate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da/deactivate" rel="deactivate"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>vmstore01</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/9207384c-37cc-4211-b19e-6f87917af8da/disks" rel="disks"/>
+DEBUG:root:>         <available>179314884608</available>
+DEBUG:root:>         <backup>false</backup>
+DEBUG:root:>         <committed>1073741824</committed>
+DEBUG:root:>         <critical_space_action_blocker>5</critical_space_action_blocker>
+DEBUG:root:>         <discard_after_delete>false</discard_after_delete>
+DEBUG:root:>         <external_status>ok</external_status>
+DEBUG:root:>         <master>false</master>
+DEBUG:root:>         <status>maintenance</status>
+DEBUG:root:>         <storage>
+DEBUG:root:>             <address>rhv-storage.example.com</address>
+DEBUG:root:>             <nfs_version>auto</nfs_version>
+DEBUG:root:>             <path>/exports/rhv-vmstore01</path>
+DEBUG:root:>             <type>nfs</type>
+DEBUG:root:>         </storage>
+DEBUG:root:>         <storage_format>v4</storage_format>
+DEBUG:root:>         <supports_discard>false</supports_discard>
+DEBUG:root:>         <supports_discard_zeroes_data>false</supports_discard_zeroes_data>
+DEBUG:root:>         <type>data</type>
+DEBUG:root:>         <used>34359738368</used>
+DEBUG:root:>         <warning_low_space_indicator>10</warning_low_space_indicator>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         <data_centers>
+DEBUG:root:>             <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         </data_centers>
+DEBUG:root:>     </storage_domain>
+DEBUG:root:>     <storage_domain href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde" id="1f8a5d7e-8ac6-42b6-a84e-b28af81cefde">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde/activate" rel="activate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde/deactivate" rel="deactivate"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>vmstore00</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/1f8a5d7e-8ac6-42b6-a84e-b28af81cefde/disks" rel="disks"/>
+DEBUG:root:>         <available>179314884608</available>
+DEBUG:root:>         <backup>false</backup>
+DEBUG:root:>         <committed>25769803776</committed>
+DEBUG:root:>         <critical_space_action_blocker>5</critical_space_action_blocker>
+DEBUG:root:>         <discard_after_delete>false</discard_after_delete>
+DEBUG:root:>         <external_status>ok</external_status>
+DEBUG:root:>         <master>false</master>
+DEBUG:root:>         <status>maintenance</status>
+DEBUG:root:>         <storage>
+DEBUG:root:>             <address>rhv-storage.example.com</address>
+DEBUG:root:>             <nfs_version>auto</nfs_version>
+DEBUG:root:>             <path>/exports/rhv-vmstore00</path>
+DEBUG:root:>             <type>nfs</type>
+DEBUG:root:>         </storage>
+DEBUG:root:>         <storage_format>v4</storage_format>
+DEBUG:root:>         <supports_discard>false</supports_discard>
+DEBUG:root:>         <supports_discard_zeroes_data>false</supports_discard_zeroes_data>
+DEBUG:root:>         <type>data</type>
+DEBUG:root:>         <used>34359738368</used>
+DEBUG:root:>         <warning_low_space_indicator>10</warning_low_space_indicator>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         <data_centers>
+DEBUG:root:>             <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         </data_centers>
+DEBUG:root:>     </storage_domain>
+DEBUG:root:>     <storage_domain href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e" id="8fec833e-cd03-4b81-87bf-4647b83a455e">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e/activate" rel="activate"/>
+DEBUG:root:>             <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e/deactivate" rel="deactivate"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>glusterSD1</name>
+DEBUG:root:>         <link href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/storagedomains/8fec833e-cd03-4b81-87bf-4647b83a455e/disks" rel="disks"/>
+DEBUG:root:>         <available>64424509440</available>
+DEBUG:root:>         <backup>false</backup>
+DEBUG:root:>         <committed>213674622976</committed>
+DEBUG:root:>         <critical_space_action_blocker>5</critical_space_action_blocker>
+DEBUG:root:>         <discard_after_delete>false</discard_after_delete>
+DEBUG:root:>         <external_status>ok</external_status>
+DEBUG:root:>         <master>true</master>
+DEBUG:root:>         <status>active</status>
+DEBUG:root:>         <storage>
+DEBUG:root:>             <address>gluster01.example.com</address>
+DEBUG:root:>             <path>/rhv-sd1</path>
+DEBUG:root:>             <type>glusterfs</type>
+DEBUG:root:>             <vfs_type>glusterfs</vfs_type>
+DEBUG:root:>         </storage>
+DEBUG:root:>         <storage_format>v4</storage_format>
+DEBUG:root:>         <supports_discard>false</supports_discard>
+DEBUG:root:>         <supports_discard_zeroes_data>false</supports_discard_zeroes_data>
+DEBUG:root:>         <type>data</type>
+DEBUG:root:>         <used>41875931136</used>
+DEBUG:root:>         <warning_low_space_indicator>10</warning_low_space_indicator>
+DEBUG:root:>         <wipe_after_delete>false</wipe_after_delete>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         <data_centers>
+DEBUG:root:>             <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         </data_centers>
+DEBUG:root:>     </storage_domain>
+DEBUG:root:> </storage_domains>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/clusters HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:50 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 4592
+DEBUG:root:> Correlation-Id: b94a6350-c0e2-4111-9b09-f5d06bce9bff
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <clusters>
+DEBUG:root:>     <cluster href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824" id="7d08bdfe-847c-11e8-afc8-2cc2607e1824">
+DEBUG:root:>         <actions>
+DEBUG:root:>             <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/resetemulatedmachine" rel="resetemulatedmachine"/>
+DEBUG:root:>         </actions>
+DEBUG:root:>         <name>Production</name>
+DEBUG:root:>         <description>Production Workloads</description>
+DEBUG:root:>         <comment></comment>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/cpuprofiles" rel="cpuprofiles"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/permissions" rel="permissions"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/affinitygroups" rel="affinitygroups"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/glusterhooks" rel="glusterhooks"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/glustervolumes" rel="glustervolumes"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/enabledfeatures" rel="enabledfeatures"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/externalnetworkproviders" rel="externalnetworkproviders"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/networkfilters" rel="networkfilters"/>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/networks" rel="networks"/>
+DEBUG:root:>         <ballooning_enabled>false</ballooning_enabled>
+DEBUG:root:>         <cpu>
+DEBUG:root:>             <architecture>x86_64</architecture>
+DEBUG:root:>             <type>Intel Nehalem Family</type>
+DEBUG:root:>         </cpu>
+DEBUG:root:>         <custom_scheduling_policy_properties>
+DEBUG:root:>             <property>
+DEBUG:root:>                 <name>HighUtilization</name>
+DEBUG:root:>                 <value>80</value>
+DEBUG:root:>             </property>
+DEBUG:root:>             <property>
+DEBUG:root:>                 <name>CpuOverCommitDurationMinutes</name>
+DEBUG:root:>                 <value>2</value>
+DEBUG:root:>             </property>
+DEBUG:root:>         </custom_scheduling_policy_properties>
+DEBUG:root:>         <error_handling>
+DEBUG:root:>             <on_error>migrate</on_error>
+DEBUG:root:>         </error_handling>
+DEBUG:root:>         <fencing_policy>
+DEBUG:root:>             <enabled>true</enabled>
+DEBUG:root:>             <skip_if_connectivity_broken>
+DEBUG:root:>                 <enabled>false</enabled>
+DEBUG:root:>                 <threshold>50</threshold>
+DEBUG:root:>             </skip_if_connectivity_broken>
+DEBUG:root:>             <skip_if_gluster_bricks_up>false</skip_if_gluster_bricks_up>
+DEBUG:root:>             <skip_if_gluster_quorum_not_met>false</skip_if_gluster_quorum_not_met>
+DEBUG:root:>             <skip_if_sd_active>
+DEBUG:root:>                 <enabled>false</enabled>
+DEBUG:root:>             </skip_if_sd_active>
+DEBUG:root:>         </fencing_policy>
+DEBUG:root:>         <firewall_type>firewalld</firewall_type>
+DEBUG:root:>         <gluster_service>false</gluster_service>
+DEBUG:root:>         <ha_reservation>false</ha_reservation>
+DEBUG:root:>         <ksm>
+DEBUG:root:>             <enabled>true</enabled>
+DEBUG:root:>             <merge_across_nodes>true</merge_across_nodes>
+DEBUG:root:>         </ksm>
+DEBUG:root:>         <maintenance_reason_required>false</maintenance_reason_required>
+DEBUG:root:>         <memory_policy>
+DEBUG:root:>             <over_commit>
+DEBUG:root:>                 <percent>100</percent>
+DEBUG:root:>             </over_commit>
+DEBUG:root:>             <transparent_hugepages>
+DEBUG:root:>                 <enabled>true</enabled>
+DEBUG:root:>             </transparent_hugepages>
+DEBUG:root:>         </memory_policy>
+DEBUG:root:>         <migration>
+DEBUG:root:>             <auto_converge>inherit</auto_converge>
+DEBUG:root:>             <bandwidth>
+DEBUG:root:>                 <assignment_method>auto</assignment_method>
+DEBUG:root:>             </bandwidth>
+DEBUG:root:>             <compressed>inherit</compressed>
+DEBUG:root:>             <policy id="80554327-0569-496b-bdeb-fcbbf52b827b"/>
+DEBUG:root:>         </migration>
+DEBUG:root:>         <optional_reason>false</optional_reason>
+DEBUG:root:>         <required_rng_sources>
+DEBUG:root:>             <required_rng_source>urandom</required_rng_source>
+DEBUG:root:>         </required_rng_sources>
+DEBUG:root:>         <switch_type>legacy</switch_type>
+DEBUG:root:>         <threads_as_cores>false</threads_as_cores>
+DEBUG:root:>         <trusted_service>false</trusted_service>
+DEBUG:root:>         <tunnel_migration>false</tunnel_migration>
+DEBUG:root:>         <version>
+DEBUG:root:>             <major>4</major>
+DEBUG:root:>             <minor>2</minor>
+DEBUG:root:>         </version>
+DEBUG:root:>         <virt_service>true</virt_service>
+DEBUG:root:>         <data_center href="/ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824" id="7d04e918-847c-11e8-8f8c-2cc2607e1824"/>
+DEBUG:root:>         <mac_pool href="/ovirt-engine/api/macpools/58ca604b-017d-0374-0220-00000000014e" id="58ca604b-017d-0374-0220-00000000014e"/>
+DEBUG:root:>         <scheduling_policy href="/ovirt-engine/api/schedulingpolicies/b4ed2332-a7ac-4d5f-9596-99a439cb2812" id="b4ed2332-a7ac-4d5f-9596-99a439cb2812"/>
+DEBUG:root:>     </cluster>
+DEBUG:root:> </clusters>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* Found bundle for host 192.168.200.100: 0x2545520
+DEBUG:root:* Re-using existing connection! (#1) with host 192.168.200.100
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#1)
+DEBUG:root:< GET /ovirt-engine/api/datacenters/7d04e918-847c-11e8-8f8c-2cc2607e1824/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/affinitygroups HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Version: 4
+DEBUG:root:< Content-Type: application/xml
+DEBUG:root:< Accept: application/xml
+DEBUG:root:< Authorization: Bearer LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:51 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Content-Type: application/xml;charset=UTF-8
+DEBUG:root:> Content-Length: 1500
+DEBUG:root:> Correlation-Id: e5acff7d-7c57-451f-b485-123c25ad5f57
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+DEBUG:root:> <affinity_groups>
+DEBUG:root:>     <affinity_group href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/affinitygroups/2bb3de4e-fc34-44f4-9f52-b40d671272df" id="2bb3de4e-fc34-44f4-9f52-b40d671272df">
+DEBUG:root:>         <name>wp-samehost</name>
+DEBUG:root:>         <description>prefer same host</description>
+DEBUG:root:>         <link href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824/affinitygroups/2bb3de4e-fc34-44f4-9f52-b40d671272df/vms" rel="vms"/>
+DEBUG:root:>         <enforcing>false</enforcing>
+DEBUG:root:>         <hosts_rule>
+DEBUG:root:>             <enabled>false</enabled>
+DEBUG:root:>             <enforcing>false</enforcing>
+DEBUG:root:>             <positive>false</positive>
+DEBUG:root:>         </hosts_rule>
+DEBUG:root:>         <positive>true</positive>
+DEBUG:root:>         <vms_rule>
+DEBUG:root:>             <enabled>true</enabled>
+DEBUG:root:>             <enforcing>false</enforcing>
+DEBUG:root:>             <positive>true</positive>
+DEBUG:root:>         </vms_rule>
+DEBUG:root:>         <cluster href="/ovirt-engine/api/clusters/7d08bdfe-847c-11e8-afc8-2cc2607e1824" id="7d08bdfe-847c-11e8-afc8-2cc2607e1824"/>
+DEBUG:root:>         <hosts>
+DEBUG:root:>             <host href="/ovirt-engine/api/hosts/4fcfe07a-eb98-4911-bc42-d9ec24eda643" id="4fcfe07a-eb98-4911-bc42-d9ec24eda643"/>
+DEBUG:root:>         </hosts>
+DEBUG:root:>         <vms>
+DEBUG:root:>             <vm href="/ovirt-engine/api/vms/7c380d6e-072b-4ba5-b244-30076332c3e4" id="7c380d6e-072b-4ba5-b244-30076332c3e4"/>
+DEBUG:root:>             <vm href="/ovirt-engine/api/vms/7affe802-93a3-428e-98a5-bf06d4cf9fc7" id="7affe802-93a3-428e-98a5-bf06d4cf9fc7"/>
+DEBUG:root:>         </vms>
+DEBUG:root:>     </affinity_group>
+DEBUG:root:> </affinity_groups>
+DEBUG:root:* Connection #1 to host 192.168.200.100 left intact
+DEBUG:root:* About to connect() to 192.168.200.100 port 443 (#2)
+DEBUG:root:* Trying 192.168.200.100...
+DEBUG:root:* Connected to 192.168.200.100 (192.168.200.100) port 443 (#2)
+DEBUG:root:* skipping SSL peer certificate verification
+DEBUG:root:* SSL connection using TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+DEBUG:root:* Server certificate:
+DEBUG:root:* subject: CN=rhvm.example.com,O=example.com,C=US
+DEBUG:root:* start date: Jul 09 20:04:25 2018 GMT
+DEBUG:root:* expire date: Jun 14 20:04:25 2023 GMT
+DEBUG:root:* common name: rhvm.example.com
+DEBUG:root:* issuer: CN=rhvm.example.com.48737,O=example.com,C=US
+DEBUG:root:< POST /ovirt-engine/services/sso-logout HTTP/1.1
+DEBUG:root:< Host: 192.168.200.100
+DEBUG:root:< User-Agent: PythonSDK/4.2.8
+DEBUG:root:< Accept: application/json
+DEBUG:root:< Content-Length: 112
+DEBUG:root:< Content-Type: application/x-www-form-urlencoded
+DEBUG:root:< scope=ovirt-app-api&token=LY0HjZHWK2a5jNfe7PP9QM1phSY2zlaII6wcesqSZIhL-S2nCimCpGuUhSIKH193WA9FK7CiaqDltTVHNXSo5A
+DEBUG:root:* upload completely sent off: 112 out of 112 bytes
+DEBUG:root:> HTTP/1.1 200 OK
+DEBUG:root:> Date: Wed, 19 Sep 2018 20:20:51 GMT
+DEBUG:root:> Server: Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips
+DEBUG:root:> Set-Cookie: locale=en_US; path=/; secure; HttpOnly; Max-Age=2147483647; Expires=Mon, 07-Oct-2086 23:34:58 GMT
+DEBUG:root:> Content-Type: application/json
+DEBUG:root:> Content-Length: 3
+DEBUG:root:> Vary: Accept-Encoding
+DEBUG:root:> 
+DEBUG:root:> { }
+DEBUG:root:* Connection #2 to host 192.168.200.100 left intact

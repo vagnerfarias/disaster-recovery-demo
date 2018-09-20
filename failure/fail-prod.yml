@@ -1,0 +1,24 @@
+---
+- hosts: gluster[0]
+  vars:
+    ansible_user: root
+ 
+  tasks:
+    - name: Stop geo-replication
+      command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr stop
+
+- hosts: gluster
+  vars:
+    ansible_user: root
+ 
+    - name: Stop glusterd to simulate failure
+      systemd:
+        state: stopped
+        name: glusterd
+
+    - name: Kill running glusterfs processes
+      command: pkill glusterfs
+
+    - name: Kill running glusterd processes
+      command: pkill glusterd
+
