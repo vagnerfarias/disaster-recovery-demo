@@ -11,6 +11,7 @@
   vars:
     ansible_user: root
  
+  tasks:
     - name: Stop glusterd to simulate failure
       systemd:
         state: stopped
