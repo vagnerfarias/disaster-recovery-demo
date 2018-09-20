@@ -20,6 +20,4 @@
     - name: Kill running glusterfs processes
       command: pkill glusterfs
 
-    - name: Kill running glusterd processes
-      command: pkill glusterd
 
