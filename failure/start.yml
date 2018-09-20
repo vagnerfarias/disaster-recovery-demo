@@ -7,3 +7,21 @@
     - name: Start glusterd
       command: systemctl start glusterd
 
+- hosts: gluster[0]
+  vars:
+    ansible_user: root
+ 
+  tasks:
+    - name: Start geo-replication
+      command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr start
+
+- hosts: rhv
+  vars:
+    ansible_user: root
+  
+  tasks:
+    - name: Start ovirt-engine
+      systemd:
+        state: started
+        name: ovirt-engine
+

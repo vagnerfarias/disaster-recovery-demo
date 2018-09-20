@@ -20,4 +20,12 @@
     - name: Kill running glusterfs processes
       command: pkill glusterfs
 
-
+- hosts: rhv
+  vars:
+    ansible_user: root
+  
+  tasks:
+    - name: Stop ovirt-engine
+      systemd:
+        state: stopped
+        name: ovirt-engine
