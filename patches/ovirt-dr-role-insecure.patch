@@ -1,0 +1,55 @@
+diff -uNr /usr/share/ansible/roles/oVirt.disaster-recovery/files/generate_mapping.py usr/share/ansible/roles/oVirt.disaster-recovery/files/generate_mapping.py
+--- /usr/share/ansible/roles/oVirt.disaster-recovery/files/generate_mapping.py	2018-07-19 06:56:18.000000000 -0400
++++ usr/share/ansible/roles/oVirt.disaster-recovery/files/generate_mapping.py	2018-09-19 16:20:45.000000000 -0400
+@@ -81,6 +81,7 @@
+         ca_file=ca,
+         debug=True,
+         log=log_,
++        insecure=True,
+     )
+     return connection
+ 
+diff -uNr /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/clean_engine.yml usr/share/ansible/roles/oVirt.disaster-recovery/tasks/clean_engine.yml
+--- /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/clean_engine.yml	2018-07-19 06:56:18.000000000 -0400
++++ usr/share/ansible/roles/oVirt.disaster-recovery/tasks/clean_engine.yml	2018-09-19 17:51:17.000000000 -0400
+@@ -5,6 +5,7 @@
+           username: "{{ vars['dr_sites_' + dr_source_map + '_username'] }}"
+           password: "{{ vars['dr_sites_' + dr_source_map + '_password'] }}"
+           ca_file: "{{ vars['dr_sites_' + dr_source_map + '_ca_file'] }}"
++          insecure: True
+ 
+     - name: Shutdown running VMs
+       include_tasks: tasks/clean/shutdown_vms.yml storage={{ item }}
+diff -uNr /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/recover_engine.yml usr/share/ansible/roles/oVirt.disaster-recovery/tasks/recover_engine.yml
+--- /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/recover_engine.yml	2018-07-19 06:56:18.000000000 -0400
++++ usr/share/ansible/roles/oVirt.disaster-recovery/tasks/recover_engine.yml	2018-09-19 17:23:48.000000000 -0400
+@@ -5,6 +5,7 @@
+           username: "{{ vars['dr_sites_' + dr_target_host + '_username'] }}"
+           password: "{{ vars['dr_sites_' + dr_target_host + '_password'] }}"
+           ca_file: "{{ vars['dr_sites_' + dr_target_host + '_ca_file'] }}"
++          insecure: True
+       ignore_errors: False
+ 
+     - name: Delete previous report log
+diff -uNr /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/run_unregistered_entities.yml usr/share/ansible/roles/oVirt.disaster-recovery/tasks/run_unregistered_entities.yml
+--- /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/run_unregistered_entities.yml	2018-07-19 06:56:18.000000000 -0400
++++ usr/share/ansible/roles/oVirt.disaster-recovery/tasks/run_unregistered_entities.yml	2018-09-19 18:03:59.000000000 -0400
+@@ -5,6 +5,7 @@
+           username: "{{ vars['dr_sites_' + dr_target_host + '_username'] }}"
+           password: "{{ vars['dr_sites_' + dr_target_host + '_password'] }}"
+           ca_file: "{{ vars['dr_sites_' + dr_target_host + '_ca_file'] }}"
++          insecure: True
+ 
+     - name: Run all the high availability VMs
+       include_tasks: tasks/recover/run_vms.yml vms={{ item }}
+diff -uNr /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/unregister_entities.yml usr/share/ansible/roles/oVirt.disaster-recovery/tasks/unregister_entities.yml
+--- /usr/share/ansible/roles/oVirt.disaster-recovery/tasks/unregister_entities.yml	2018-07-19 06:56:18.000000000 -0400
++++ usr/share/ansible/roles/oVirt.disaster-recovery/tasks/unregister_entities.yml	2018-09-19 18:01:51.000000000 -0400
+@@ -5,6 +5,7 @@
+           username: "{{ vars['dr_sites_' + dr_source_map + '_username'] }}"
+           password: "{{ vars['dr_sites_' + dr_source_map + '_password'] }}"
+           ca_file: "{{ vars['dr_sites_' + dr_source_map + '_ca_file'] }}"
++          insecure: True
+ 
+     # Get all the running VMs and shut them down
+     - name: Fetch running VMs in the setup
