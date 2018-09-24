@@ -1,0 +1,9 @@
+---
+- name: Promoting slave - enabling indexing
+  command: "gluster volume set {{ item }} geo-replication.indexing on"
+  with_items: "{{ slave_vols }}"
+
+- name: Promoting slave - enabling changelog
+  command: "gluster volume set {{ item }} changelog on"
+  with_items: "{{ slave_vols }}"
+
