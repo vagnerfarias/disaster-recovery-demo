@@ -1,0 +1,13 @@
+[rhv-primary]
+rhvm.example.com
+
+[gluster-primary]
+gluster01.example.com
+gluster02.example.com
+gluster03.example.com
+
+[gluster-secondary]
+dr-gluster01.example.com
+dr-gluster02.example.com
+dr-gluster03.example.com
+

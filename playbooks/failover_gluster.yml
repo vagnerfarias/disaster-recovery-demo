@@ -1,0 +1,10 @@
+---
+- hosts: gluster-secondary[0]
+  vars: 
+    ansible_user: root
+
+  tasks:
+  - name: Gluster tasks
+    import_role:
+      name: gluster
+      tasks_from: failover.yml
