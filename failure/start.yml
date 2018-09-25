@@ -1,5 +1,5 @@
 ---
-- hosts: gluster
+- hosts: gluster-primary
   vars:
     ansible_user: root
  
@@ -7,7 +7,7 @@
     - name: Start glusterd
       command: systemctl start glusterd
 
-- hosts: gluster[0]
+- hosts: gluster-primary[0]
   vars:
     ansible_user: root
  
@@ -15,7 +15,7 @@
     - name: Start geo-replication
       command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr start
 
-- hosts: rhv
+- hosts: rhvm.example.com
   vars:
     ansible_user: root
   
