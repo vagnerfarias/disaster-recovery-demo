@@ -1,5 +1,5 @@
 ---
-- hosts: gluster[0]
+- hosts: gluster-primary[0]
   vars:
     ansible_user: root
  
