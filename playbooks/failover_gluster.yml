@@ -1,16 +1,24 @@
 ---
-- hosts: gluster-secondary[0]
+- hosts: rhvh-secondary[0]
   tags:
     - fail_over 
   vars: 
     ansible_user: root
 
   tasks:
+  - name: Release SD locks (only for demo)
+    import_role:
+      name: gluster
+      tasks_from: release_lock.yml
+
+- hosts: gluster-secondary[0]
+  tags:
+    - fail_over 
+  vars: 
+    ansible_user: root
+
   - name: Gluster tasks
     import_role:
       name: gluster
       tasks_from: failover.yml
 
-  - name: Ensure locks are released (pause)
-    pause: 
-      minutes: 1

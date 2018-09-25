@@ -11,3 +11,5 @@ dr-gluster01.example.com
 dr-gluster02.example.com
 dr-gluster03.example.com
 
+[rhvh-secondary]
+dr-rhvh01.example.com
