@@ -74,7 +74,7 @@ dr_network_mappings:
 # please uncomment it in case you have more than one DC.
   secondary_network_dc: DC02
   secondary_profile_name: vm public net
-  secondary_profile_id: 8e7467d5-5605-45da-9db5-e4477ce4ffaa
+  secondary_profile_id: 767eb7aa-0139-4d18-b1d5-c9ef1e7c5cb3
 
 - primary_network_name: vm public net
 # Data Center name is relevant when multiple vnic profiles are maintained.
@@ -88,7 +88,7 @@ dr_network_mappings:
 # please uncomment it in case you have more than one DC.
   secondary_network_dc: DC02
   secondary_profile_name: limited_bw
-  secondary_profile_id: c3847764-8a2e-416f-93bf-f0d1f7108da9
+  secondary_profile_id: 30bf9304-61e2-4661-bc3f-a68431793d6f
 
 
 # Mapping for external LUN disks
