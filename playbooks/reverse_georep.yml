@@ -1,0 +1,12 @@
+---
+- hosts: gluster-secondary[0]
+  vars: 
+    ansible_user: root
+
+  tasks:
+  - name: Reverse geo-replication
+    import_role:
+      name: gluster
+      tasks_from: initial_failback_sync.yml
+
+

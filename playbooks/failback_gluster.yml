@@ -1,0 +1,12 @@
+---
+- hosts: gluster-secondary[0]
+  vars: 
+    ansible_user: root
+
+  tasks:
+  - name: Failback storage
+    import_role:
+      name: gluster
+      tasks_from: failback.yml
+    tags: fail_back
+

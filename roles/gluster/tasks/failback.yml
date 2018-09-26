@@ -1,0 +1,19 @@
+---
+- name: Ensure VMs are turned off
+  pause:
+    prompt: "Ensure VMs are turned off before continuing"
+
+- name: Final sync data from secondary to primary
+  command: "python /usr/share/glusterfs/scripts/schedule_georep.py rhv-sd1-dr gluster01.example.com rhv-sd1"
+
+- name: Stop Geo-Replication from Secondary to Primary
+  command: "gluster volume geo-replication rhv-sd1-dr gluster01.example.com::rhv-sd1-dr stop"
+
+- name: Delete Geo-Replication Session
+  command: "gluster volume geo-replication rhv-sd1-dr gluster01.example.com::rhv-sd1 delete"
+
+- name: Reset Geo-Replication indexing
+  command: "gluster volume reset rhv-sd1-dr geo-replication.indexing force"
+
+- name: Reset Geo-Replication changelog
+  command: "gluster volume reset rhv-sd1-dr changelog"
