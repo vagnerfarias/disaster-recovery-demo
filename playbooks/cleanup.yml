@@ -1,0 +1,6 @@
+---
+- name: Storage Clean up tasks
+  import_playbook: cleanup_gluster.yml
+
+- name: RHV Clean up tasks
+  import_playbook: ../rhv/dr-rhv-cleanup.yml
