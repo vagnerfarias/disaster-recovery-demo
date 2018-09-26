@@ -7,13 +7,13 @@
     - name: Start glusterd
       command: systemctl start glusterd
 
-- hosts: gluster-primary[0]
-  vars:
-    ansible_user: root
- 
-  tasks:
-    - name: Start geo-replication
-      command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr start
+#- hosts: gluster-primary[0]
+#  vars:
+#    ansible_user: root
+# 
+#  tasks:
+#    - name: Start geo-replication
+#      command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr start
 
 - hosts: rhvm.example.com
   vars:
