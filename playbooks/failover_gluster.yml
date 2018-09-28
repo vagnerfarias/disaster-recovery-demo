@@ -4,6 +4,7 @@
     - fail_over 
   vars: 
     ansible_user: root
+    share_path: dr-gluster01.example.com:/rhv-sd1-dr
 
   tasks:
   - name: Release SD locks (only for demo)

@@ -1,12 +1,12 @@
 ---
-# Intentionally hard coded as this shouldn't be used outside this demo environment.
+# This shouldn't be used outside this demo environment.
 # Actually, this shouldn't be used at all. Only using it because of time constraints
 # during demo.
 - name: Temporary mount
-  command: "mount -t glusterfs dr-gluster01.example.com:/rhv-sd1-dr /mnt"
+  command: "mount -t glusterfs {{ share_path }} /mnt"
 
 - name: Sanlock init
-  command: "sanlock direct init -s 8fec833e-cd03-4b81-87bf-4647b83a455e:0:/mnt/8fec833e-cd03-4b81-87bf-4647b83a455e/dom_md/ids:0"
+  command: "sanlock direct init -s {{ storage_domain_id }}:0:/mnt/{{ storage_domain_id }}/dom_md/ids:0"
 
 - name: Unmount temporary share
   command: "umount /mnt"

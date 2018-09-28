@@ -1,1 +1,5 @@
+slave_node: dr-gluster01.example.com
 slave_vols: rhv-sd1-dr
+master_node: gluster01.example.com
+master_vols: rhv-sd1-dr
+storage_domain_id: 8fec833e-cd03-4b81-87bf-4647b83a455e

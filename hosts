@@ -1,4 +1,5 @@
 rhvm.example.com
+dr-rhvm.example.com
 
 [gluster-primary]
 gluster01.example.com
@@ -9,6 +10,10 @@ gluster03.example.com
 dr-gluster01.example.com
 dr-gluster02.example.com
 dr-gluster03.example.com
+
+[rhvh-primary]
+rhvh01.example.com
+rhvh02.example.com
 
 [rhvh-secondary]
 dr-rhvh01.example.com
