@@ -8,6 +8,9 @@
 - name: Config special sync mode for recovery
   command: "gluster volume geo-replication rhv-sd1-dr gluster01.example.com::rhv-sd1 config special-sync-mode recover"
 
+- name: Disable the gfid-conflict-resolution option
+  command: "gluster volume geo-replication rhv-sd1-dr gluster01.example.com::rhv-sd1 config gfid-conflict-resolution false"
+
 - name: Start Geo-Replication session
   command: "gluster volume geo-replication rhv-sd1-dr gluster01.example.com::rhv-sd1 start"
 
