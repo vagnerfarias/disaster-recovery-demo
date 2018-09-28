@@ -5,7 +5,7 @@
  
   tasks:
     - name: Stop geo-replication
-      command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr stop
+      command: gluster volume geo-replication rhv-sd1 gluster01.example.com::rhv-sd1-dr stop
 
 - hosts: gluster-primary
   vars:
