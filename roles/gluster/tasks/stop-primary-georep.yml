@@ -1,3 +1,3 @@
 ---
 - name: Stop Geo-Replication from Primary to Secondary
-  command: "gluster volume geo-replication rhv-sd1 dr-gluster01.example.com::rhv-sd1-dr stop"
+  command: "gluster volume geo-replication rhv-sd1 dr-gluster01.example.com::rhv-sd1-dr stop force"
