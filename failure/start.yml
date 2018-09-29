@@ -5,7 +5,15 @@
  
   tasks:
     - name: Start glusterd
-      command: systemctl start glusterd
+      systemd:
+        state: started
+        name: glusterd
+
+    - name: Restart glusterfssharedstorage service
+      systemd:
+        state: restarted
+        name: glusterfssharedstorage
+
 
 #- hosts: gluster-primary[0]
 #  vars:
