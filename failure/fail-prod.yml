@@ -5,7 +5,7 @@
  
   tasks:
     - name: Stop geo-replication
-      command: gluster volume geo-replication rhv-sd1 dr-gluster01.example.com::rhv-sd1-dr stop
+      command: python /usr/share/glusterfs/scripts/schedule_georep.py rhv-sd1 dr-gluster01.example.com rhv-sd1-dr
 
 - hosts: gluster-primary
   vars:
