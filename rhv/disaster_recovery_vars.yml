@@ -16,13 +16,13 @@ dr_import_storages:
   dr_storage_domain_type: data
   dr_warning_low_space: 10
   dr_primary_name: glusterSD1
-  dr_primary_master_domain: True
+  dr_primary_master_domain: False
   dr_primary_dc_name: DC01
   dr_primary_path: /rhv-sd1
   dr_primary_address: gluster01.example.com
   # Fill in the empty properties related to the secondary site
   dr_secondary_name: glusterSD1
-  dr_secondary_master_domain: True
+  dr_secondary_master_domain: False
   dr_secondary_dc_name: DC02
   dr_secondary_path: /rhv-sd1-dr
   dr_secondary_address:  dr-gluster01.example.com
@@ -42,7 +42,7 @@ dr_affinity_group_mappings:
 
 
 # Mapping for affinity label
-#dr_affinity_label_mappings:
+dr_affinity_label_mappings:
 #- primary_name: Windows
 #  # Fill the correlated affinity label name in the secondary site for affinity label 'Windows'
 #  secondary_name: # Windows
