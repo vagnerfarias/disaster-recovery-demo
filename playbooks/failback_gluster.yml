@@ -10,6 +10,15 @@
       tasks_from: failback.yml
     tags: fail_back
 
+- hosts: gluster-primary[0]
+  vars: 
+    ansible_user: root
+
+  tasks:
+  - name: Set volume to read-write
+    command: gluster volume set {{ MASTER_VOL }} features.read-only off
+
+
 #- hosts: rhvh-primary[0]
 #  tags:
 #    - fail_over 
