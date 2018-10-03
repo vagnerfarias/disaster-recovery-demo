@@ -17,6 +17,7 @@
   tasks:
   - name: Set volume to read-write
     command: gluster volume set rhv-sd1 features.read-only off
+    tags: fail_back
 
 
 #- hosts: rhvh-primary[0]
