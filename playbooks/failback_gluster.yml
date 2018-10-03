@@ -10,17 +10,17 @@
       tasks_from: failback.yml
     tags: fail_back
 
-- hosts: rhvh-primary[0]
-  tags:
-    - fail_over 
-  vars: 
-    ansible_user: root
-    share_path: gluster01.example.com:/rhv-sd1
-
-  tasks:
-  - name: Release SD locks (only for demo)
-    import_role:
-      name: gluster
-      tasks_from: release_lock.yml
-
+#- hosts: rhvh-primary[0]
+#  tags:
+#    - fail_over 
+#  vars: 
+#    ansible_user: root
+#    share_path: gluster01.example.com:/rhv-sd1
+#
+#  tasks:
+#  - name: Release SD locks (only for demo)
+#    import_role:
+#      name: gluster
+#      tasks_from: release_lock.yml
+#
 
