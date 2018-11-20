@@ -3,17 +3,23 @@
   pause:
     prompt: "Ensure VMs are turned off before continuing"
 
-- name: Final sync data from secondary to primary
-  command: "python /usr/share/glusterfs/scripts/schedule_georep.py {{ slave_vols }} gluster01.example.com {{ master_vols }}"
+#- name: Final sync data from secondary to primary
+#  command: "python /usr/share/glusterfs/scripts/schedule_georep.py {{ item.1 }} {{ master_node }} {{ item.0 }}"
+#  loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Stop Geo-Replication from Secondary to Primary
-  command: "gluster volume geo-replication {{ slave_vols }} gluster01.example.com::{{ master_vols }} stop"
+  command: "gluster volume geo-replication {{ item.1 }} {{ master_node }}::{{ item.0 }} stop"
+  loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Delete Geo-Replication Session
-  command: "gluster volume geo-replication {{ slave_vols }} gluster01.example.com::{{ master_vols }} delete"
+  command: "gluster volume geo-replication {{ item.1 }} {{ master_node}}::{{ item.0 }} delete"
+  loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Reset Geo-Replication indexing
-  command: "gluster volume reset {{ slave_vols }} geo-replication.indexing force"
+  command: "gluster volume reset {{ item }} geo-replication.indexing force"
+  loop: "{{ slave_vols|flatten(levels=1) }}"
 
 - name: Reset Geo-Replication changelog
-  command: "gluster volume reset {{ slave_vols }} changelog"
+  command: "gluster volume reset {{ item }} changelog"
+  loop: "{{ slave_vols|flatten(levels=1) }}"
+

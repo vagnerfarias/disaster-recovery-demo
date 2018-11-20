@@ -1,3 +1,4 @@
 ---
 - name: Stop Geo-Replication from Primary to Secondary
-  command: "gluster volume geo-replication {{ master_vols }} dr-gluster01.example.com::{{ slave_vols }} stop force"
+  command: "gluster volume geo-replication {{ item.0 }} {{ slave_node }}::{{ item.1 }} stop force"
+  loop: "{{ master_vols|zip(slave_vols)|list }}"
