@@ -1,0 +1,24 @@
+---
+- block:
+    - name: generate Geo-rep session specific ssh-keys
+      command: gluster system:: gsec_create creates=/var/lib/glusterd/geo-replication/common_secret.pem.pub
+      when: inventory_hostname == groups['gluster-prd'][0] or
+            inventory_hostname == groups['gluster-dr'][0]
+
+    - name: Setup shared storage volume
+      command: gluster volume set all cluster.enable-shared-storage enable
+      when: inventory_hostname == groups['gluster-prd'][0] or
+            inventory_hostname == groups['gluster-dr'][0]
+
+    - name: Enable glusterfssharedstorage service
+      systemd: 
+        name: glusterfssharedstorage
+        enabled: yes
+        state: started
+  
+    - name: Disable performace.quick-read on slave volume
+      command: gluster volume set "{{ item }}" performance.quick-read off
+      with_items: "{{ slave_vols }}"
+      when: inventory_hostname == groups['gluster-dr'][0]
+  become: yes
+

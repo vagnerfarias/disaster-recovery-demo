@@ -1,0 +1,35 @@
+---
+- block:
+    - name: Check if Geo-replication session from PRD to DR already exists
+      command: "gluster volume geo-replication {{ item.0 }} {{ slave_node }}::{{ item.1 }} status"
+      loop: "{{ master_vols|zip(slave_vols)|list }}"
+      register: georep
+      ignore_errors: true
+
+    #- debug:
+    #    msg: "mastervol: {{ item.item.0 }} / slavevol: {{ item.item.1 }}"
+    #  when: item.rc != 0
+    #  loop: "{{ georep.results }}"
+
+    - name: Create Geo-replication session from PRD to DR if it doesn't exist
+      command: "gluster volume geo-replication {{ item.item.0 }} {{ slave_node }}::{{ item.item.1 }} create push-pem force"
+      when: item.rc != 0
+      loop: "{{ georep.results }}"
+      register: georep_created
+
+    - name: Pause when Geo-replication session is created
+      pause:
+        seconds: 10
+      when: georep_created.changed
+
+    - name: Config Geo-replication session from PRD to DR to use meta_volume
+      command: "gluster volume geo-replication {{ item.item.0 }} {{ slave_node }}::{{ item.item.1 }} config use_meta_volume true"
+      loop: "{{ georep.results }}"
+      when: georep_created.changed
+
+    - name: Start Geo-replication session from PRD to DR
+      command: "gluster volume geo-replication {{ item.item.0 }} {{ slave_node }}::{{ item.item.1 }} start"
+      when: item.stdout | regex_search('Stopped') or georep_created.changed
+      loop: "{{ georep.results }}"
+
+  become: yes
