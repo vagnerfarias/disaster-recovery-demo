@@ -16,21 +16,21 @@
 
   tasks:
   - name: Set volume to read-write
-    command: gluster volume set rhv-sd1 features.read-only off
+    command: gluster volume set {{ master_vols }} features.read-only off
     tags: fail_back
 
 
-#- hosts: rhvh-primary[0]
-#  tags:
-#    - fail_over 
-#  vars: 
-#    ansible_user: root
-#    share_path: gluster01.example.com:/rhv-sd1
-#
-#  tasks:
-#  - name: Release SD locks (only for demo)
-#    import_role:
-#      name: gluster
-#      tasks_from: release_lock.yml
-#
+- hosts: rhvh-primary[0]
+  tags:
+    - fail_back
+  vars: 
+    ansible_user: root
+    share_path: gluster01.example.com:/data
+
+  tasks:
+  - name: Release SD locks (only for demo)
+    import_role:
+      name: gluster
+      tasks_from: release_lock.yml
+
 
