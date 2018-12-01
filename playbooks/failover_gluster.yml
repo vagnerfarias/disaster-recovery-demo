@@ -1,5 +1,5 @@
 ---
-- hosts: rhvh-secondary[0]
+- hosts: rhvh-backup[0]
   tags:
     - fail_over 
   vars: 
@@ -12,7 +12,7 @@
       name: gluster
       tasks_from: release_lock.yml
 
-- hosts: gluster-secondary[0]
+- hosts: gluster-backup[0]
   tags:
     - fail_over 
   vars: 
