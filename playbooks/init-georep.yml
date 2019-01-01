@@ -1,0 +1,21 @@
+---
+- hosts: gluster-primary,gluster-backup
+  remote_user: root
+
+  tasks:
+    - import_role:
+        name: gluster
+        tasks_from: configure-georep.yml
+
+- hosts: gluster-primary[0]
+  remote_user: root
+  #tasks:
+  #  - name: test
+  #    debug:
+  #      msg: testing
+
+  tasks:
+    - import_role:
+        name: gluster
+        tasks_from: create-georep-session.yml
+
