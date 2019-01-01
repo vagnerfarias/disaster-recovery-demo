@@ -1,24 +1,40 @@
+[gluster-primary]
+192.168.8.11
+192.168.8.12
+192.168.8.13
+
 [ovirt-engine-primary]
 rhvm.example.com
 
 [ovirt-hosts-primary]
-rhvh01.example.com
-rhvh02.example.com
+dr-rhvm.example.com
 
-[gluster-primary]
-gluster01.example.com
-gluster02.example.com
-gluster03.example.com
+[ovirt-primary:children]
+ovirt-engine-primary
+ovirt-hosts-primary
+
+[primary:children]
+ovirt-primary
+gluster-primary
+
+[gluster-backup]
+192.168.70.11
+192.168.70.12
+192.168.70.13
 
 [ovirt-engine-backup]
 dr-rhvm.example.com
 
 [ovirt-hosts-backup]
-dr-rhvh01.example.com
+192.168.70.22
 
-[gluster-backup]
-dr-gluster01.example.com
-dr-gluster02.example.com
-dr-gluster03.example.com
+[ovirt-backup:children]
+ovirt-engine-backup
+ovirt-hosts-backup
 
+[backup:children]
+ovirt-backup
+gluster-backup
 
+[ansible]
+192.168.8.5

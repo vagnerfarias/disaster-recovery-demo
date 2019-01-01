@@ -1,10 +1,27 @@
 ---
+- name: Setup
+  hosts: localhost
+  connection: local
+  
+  tasks:
+  - name: Get TLS certificates
+    get_url: 
+      url: "https://{{ item.hostname }}/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA"
+      dest: "./{{ item.filename }}"
+      validate_certs: no
+    loop:
+      - { hostname: "{{ groups['ovirt-engine-primary'][0] }}", filename: 'prod-ca.pem' }
+      - { hostname: "{{ groups['ovirt-engine-backup'][0] }}", filename: 'dr-ca.pem' }
+    tags:
+      - tls
+      - generate_mapping
+
 - name: Generate mapping
   hosts: localhost
   connection: local
 
   vars:
-    site: https://rhvm.example.com/ovirt-engine/api
+    site: "https://{{ groups['ovirt-engine-primary'][0] }}/ovirt-engine/api"
     username: admin@internal
     password: r3dh4t1!
     ca: prod-ca.pem
