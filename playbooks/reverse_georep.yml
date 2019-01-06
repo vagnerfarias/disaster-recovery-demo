@@ -1,7 +1,8 @@
 ---
 - hosts: gluster-backup[0]
+  become: yes
   vars: 
-    ansible_user: root
+    ansible_user: admin
 
   tasks:
   - name: Reverse geo-replication

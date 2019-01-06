@@ -1,23 +1,27 @@
 ---
 - hosts: gluster-primary
   vars: 
-    ansible_user: root
+    ansible_user: admin
 
   tasks:
   - name: Ensure Gluster is running on primary site
+    become: yes
     systemd:
       state: started
       name: glusterd
     tags: clean_engine
 
-- hosts: gluster-primary[0]
-  vars: 
-    ansible_user: root
-
-  tasks:
-  - name: Stop Geo Replication from Primary to Secondary
-    import_role:
-      name: gluster
-      tasks_from: stop-primary-georep.yml
-    tags: clean_engine
+# Unused in demo environment as geo replication session was already stopped
+# during failure simulation
+#- hosts: gluster-primary[0]
+#  vars: 
+#    ansible_user: admin
+#
+#  tasks:
+#  - name: Stop Geo Replication from Primary to Secondary
+#    become: yes
+#    import_role:
+#      name: gluster
+#      tasks_from: stop-primary-georep.yml
+#    tags: clean_engine
 

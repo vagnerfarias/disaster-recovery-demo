@@ -1,13 +1,18 @@
 ---
 - hosts: gluster-primary
+  become: yes
   vars:
-    ansible_user: root
+    ansible_user: admin
  
   tasks:
     - name: Start glusterd
       systemd:
         state: started
         name: glusterd
+
+    - name: Pause to ensure glusterd is started
+      pause:
+        seconds: 5
 
     - name: Restart glusterfssharedstorage service
       systemd:
@@ -24,8 +29,9 @@
 #      command: gluster volume geo-replication rhv-sd1 10.200.0.81::rhv-sd1-dr start
 
 - hosts: rhvm.example.com
+  become: yes
   vars:
-    ansible_user: root
+    ansible_user: admin
   
   tasks:
     - name: Start ovirt-engine

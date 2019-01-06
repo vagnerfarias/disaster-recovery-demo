@@ -1,23 +1,23 @@
 ---
 - name: Create Geo-Replication session from Secondary to Primary
-  command: "gluster volume geo-replication {{ item.1 }} {{ master_node }}::{{ item.0 }} create push-pem force"
+  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} create push-pem force"
   loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Config meta volume
-  command: "gluster volume geo-replication {{ item.1 }} {{ master_node }}::{{ item.0 }} config use_meta_volume true"
+  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} config use_meta_volume true"
   loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Config special sync mode for recovery
-  command: "gluster volume geo-replication {{ item.1 }} {{ master_node }}::{{ item.0 }} config special-sync-mode recover"
+  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} config special-sync-mode recover"
   loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 #TODO: Check if this is actually required / recommended for this use case
-#- name: Disable the gfid-conflict-resolution option
-#  command: "gluster volume geo-replication {{ item.1 }} {{ master_node }}::{{ item.0 }} config gfid-conflict-resolution false"
-#  loop: "{{ master_vols|zip(slave_vols)|list }}"
+- name: Disable the gfid-conflict-resolution option
+  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} config gfid-conflict-resolution false"
+  loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Start Geo-Replication session
-  command: "gluster volume geo-replication {{ item.1 }} {{ master_node }}::{{ item.0 }} start"
+  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} start"
   loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 
