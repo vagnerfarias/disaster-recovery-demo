@@ -23,5 +23,10 @@
       command: gluster volume set "{{ item }}" performance.quick-read off
       with_items: "{{ slave_vols }}"
       when: inventory_hostname == groups['gluster-backup'][0]
+
+    - name: Set slave volume to read-only
+      command: gluster volume set "{{ item }}" features.read-only on
+      with_items: "{{ slave_vols }}"
+      when: inventory_hostname == groups['gluster-backup'][0]
   become: yes
 
