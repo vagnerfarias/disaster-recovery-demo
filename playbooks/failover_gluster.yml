@@ -1,9 +1,10 @@
 ---
-- hosts: rhvh-backup[0]
+- hosts: ovirt-hosts-backup[0]
+  become: yes
   tags:
     - fail_over 
   vars: 
-    ansible_user: root
+    ansible_user: admin
     share_path: dr-gluster01.example.com:/data
 
   tasks:
@@ -13,10 +14,11 @@
       tasks_from: release_lock.yml
 
 - hosts: gluster-backup[0]
+  become: yes
   tags:
     - fail_over 
   vars: 
-    ansible_user: root
+    ansible_user: admin
 
   tasks:
   - name: Gluster tasks

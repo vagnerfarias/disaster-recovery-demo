@@ -7,7 +7,7 @@
 rhvm.example.com
 
 [ovirt-hosts-primary]
-dr-rhvm.example.com
+192.168.8.22
 
 [ovirt-primary:children]
 ovirt-engine-primary
@@ -37,4 +37,4 @@ ovirt-backup
 gluster-backup
 
 [ansible]
-192.168.8.5
+192.168.70.10

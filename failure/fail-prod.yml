@@ -1,31 +1,53 @@
 ---
 - hosts: gluster-primary[0]
+  gather_facts: no
   vars:
     ansible_user: root
  
   tasks:
     - name: Stop geo-replication
-      command: python /usr/local/bin/schedule_georep.py rhv-sd1 dr-gluster01.example.com rhv-sd1-dr
+      command: "python /usr/share/glusterfs/scripts/schedule_georep.py {{ item.0 }} {{ groups['gluster-backup'][0] }} {{ item.1 }}"
+      loop: "{{ master_vols|zip(slave_vols)|list }}"
+
+    # TODO: setting to r/o should be done when bringing services up again instead of doing it here
+    - name: Set volume to read-only
+      command: "gluster volume set {{ item }} features.read-only on"
+      loop: "{{ master_vols|flatten(levels=1) }}"
 
 - hosts: gluster-primary
   vars:
-    ansible_user: root
+    ansible_user: admin
  
   tasks:
     - name: Stop glusterd to simulate failure
+      become: yes
       systemd:
         state: stopped
         name: glusterd
 
     - name: Kill running glusterfs processes
+      become: yes
       command: pkill glusterfs
 
 - hosts: rhvm.example.com
   vars:
-    ansible_user: root
+    ansible_user: admin
   
   tasks:
     - name: Stop ovirt-engine
+      become: yes
       systemd:
         state: stopped
         name: ovirt-engine
+
+- hosts: ovirt-hosts-primary
+  gather_facts: no
+  vars:
+    ansible_user: admin
+
+  tasks:
+    - name: reboot host
+      become: yes
+      shell: sleep 10 && /sbin/shutdown -r now
+      async: 300
+      poll: 0

@@ -1,4 +1,8 @@
 ---
+- name: Promoting slave - enabling read/write access
+  command: "gluster volume set {{ item }} features.read-only off"
+  with_items: "{{ slave_vols }}"
+
 - name: Promoting slave - enabling indexing
   command: "gluster volume set {{ item }} geo-replication.indexing on"
   with_items: "{{ slave_vols }}"
