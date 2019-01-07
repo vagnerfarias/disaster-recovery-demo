@@ -1,7 +1,8 @@
 ---
 - hosts: gluster-backup[0]
+  become: yes
   vars: 
-    ansible_user: root
+    ansible_user: admin
 
   tasks:
   - name: Failback storage
@@ -11,20 +12,23 @@
     tags: fail_back
 
 - hosts: gluster-primary[0]
+  become: yes
   vars: 
-    ansible_user: root
+    ansible_user: admin
 
   tasks:
   - name: Set volume to read-write
-    command: gluster volume set {{ master_vols }} features.read-only off
+    command: gluster volume set {{ item }} features.read-only off
+    loop: "{{ master_vols|flatten(levels=1) }}"
     tags: fail_back
 
 
-- hosts: rhvh-primary[0]
+- hosts: ovirt-hosts-primary[0]
+  become: yes
   tags:
     - fail_back
   vars: 
-    ansible_user: root
+    ansible_user: admin
     share_path: gluster01.example.com:/data
 
   tasks:

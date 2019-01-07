@@ -12,9 +12,9 @@
   loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 #TODO: Check if this is actually required / recommended for this use case
-- name: Disable the gfid-conflict-resolution option
-  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} config gfid-conflict-resolution false"
-  loop: "{{ master_vols|zip(slave_vols)|list }}"
+#- name: Disable the gfid-conflict-resolution option
+#  command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} config gfid-conflict-resolution false"
+#  loop: "{{ master_vols|zip(slave_vols)|list }}"
 
 - name: Start Geo-Replication session
   command: "gluster volume geo-replication {{ item.1 }} {{ groups['gluster-primary'][0] }}::{{ item.0 }} start"
