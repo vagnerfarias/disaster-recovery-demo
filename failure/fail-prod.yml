@@ -1,8 +1,9 @@
 ---
 - hosts: gluster-primary[0]
   gather_facts: no
+  become: yes
   vars:
-    ansible_user: root
+    ansible_user: admin
  
   tasks:
     - name: Stop geo-replication
