@@ -1,4 +1,17 @@
 ---
+- hosts: gluster-backup[0]
+  become: yes
+  tags:
+    - fail_over 
+  vars: 
+    ansible_user: admin
+
+  tasks:
+  - name: Gluster tasks
+    import_role:
+      name: gluster
+      tasks_from: failover.yml
+
 - hosts: ovirt-hosts-backup[0]
   become: yes
   tags:
@@ -13,16 +26,4 @@
       name: gluster
       tasks_from: release_lock.yml
 
-- hosts: gluster-backup[0]
-  become: yes
-  tags:
-    - fail_over 
-  vars: 
-    ansible_user: admin
-
-  tasks:
-  - name: Gluster tasks
-    import_role:
-      name: gluster
-      tasks_from: failover.yml
 
